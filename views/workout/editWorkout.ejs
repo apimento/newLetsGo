@@ -1,0 +1,68 @@
+<h1>EDIT ENTRY</h1> 
+
+<form method="post" action="/workout/editWorkout" > 
+
+    <div>
+       <label class="form-label" > Date</label> 
+       <input name="departs" type="datetime-local" class="form-control">
+    </div> 
+
+    <div>
+        <label class="form-label" > Target Muscle Groups</label> 
+        <select type="checkbox" name="targetMuscleGroup[]" multiple="multiple">
+            <option value="Legs">Legs</option>
+            <option value="Chest">Chest</option>
+            <option value="Shoulders">Shoulders</option>
+            <option value="Back">Back</option>
+            <option value="Arms">Arms</option>
+            <option value="Core">Core</option>  
+            <option value="Cardio">Cardio</option>
+            <option value="- - -">- - -</option>
+            <option value="Calves">Calves</option>
+            <option value="Quads">Quads</option> 
+            <option value="Hamstrings">Hamstrings</option>
+            <option value="Glutes">Glutes</option>
+            <option value="Obliques">Obliques</option>
+            <option value="Abs">Abs</option> 
+            <option value="Biceps">Biceps</option>
+            <option value="Triceps">Triceps</option>
+            <option value="Traps">Traps</option>
+            <option value="Delts">Delts</option>  
+            <option value="Lats">Lats</option> 
+          </select>
+    </div>
+
+    <!--OR LIKE: 
+    having three seperate inputs? where user only selects one?? what's better UX hmmmm.. 
+thinkging about thumb use and precision --> 
+
+    <div>
+        <label class="form-label" > Length of Workout</label> 
+        <input name="lengthOfWorkout" type="Number" class="form-control"> mins
+    </div>
+
+    <div>
+        <label class="form-label" > Rating</label> 
+        <select type="number" name="rating" placeholder="1-10">  
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option> 
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option> 
+        <option value="10">10</option> 
+        </select>
+    </div> 
+
+    <div> 
+        <label> Comments</label> 
+        <input name="comments" type="text">
+    </div>  
+
+    <button type="back">BACK</button> 
+    <button type="submit">SAVE</button> 
+
+</form>  

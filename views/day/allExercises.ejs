@@ -1,0 +1,25 @@
+<!--build rough ejs for allEx and allWork 
+W routers, controllers 
+E routers, controllers--> 
+<h1><%=workout.date %></h1> 
+<h2><%=workout.targetMuscleGroups1%> <%=workout.targetMuscleGroups2%> <%=workout.targetMuscleGroups3%></h2> 
+<h3><%=workout.legnthOfWorkout%> <%=workout.comments%> <%=wokout.rating%></h3> 
+
+<div>
+    <%= exercise.forEach(function(exercise) { %> 
+    <div > 
+        <div><%= exercise.name%>  <%= exercise.targetMuscleGroups1%> 
+            <!--edit button and delete button-->
+            </div>   
+        
+        <div class="collapsable">
+            Sets <%= exercise.sets%> Reps <%=exercise.reps%> Wt<%= exercise.weight %><%=exerces.weightUom%> 
+            Equipment<%=exercise.equipmentUsed%> 
+            Comments <%=exercise.comments%>
+        </div>
+    } 
+</div>  
+
+<button type="submit">ADD NEW EXERCISE</button> 
+
+<button type="back">BACK</button>

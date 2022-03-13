@@ -1,0 +1,70 @@
+<h1>EDIT EXERCISE</h1> 
+
+<form method="put" action="/workout/editExercise" > 
+
+    <div>
+       <label class="form-label" >Number</label> 
+       <input name="name" type="text" class="form-control">
+    </div> 
+
+    <div>
+        <label class="form-label" > Target Muscle Groups</label> 
+        <select type="checkbox" name="targetMuscleGroup[]" multiple="multiple">
+            <option value="Legs">Legs</option>
+            <option value="Chest">Chest</option>
+            <option value="Shoulders">Shoulders</option>
+            <option value="Back">Back</option>
+            <option value="Arms">Arms</option>
+            <option value="Core">Core</option>  
+            <option value="Cardio">Cardio</option>
+            <option value="- - -">- - -</option>
+            <option value="Calves">Calves</option>
+            <option value="Quads">Quads</option> 
+            <option value="Hamstrings">Hamstrings</option>
+            <option value="Glutes">Glutes</option>
+            <option value="Obliques">Obliques</option>
+            <option value="Abs">Abs</option> 
+            <option value="Biceps">Biceps</option>
+            <option value="Triceps">Triceps</option>
+            <option value="Traps">Traps</option>
+            <option value="Delts">Delts</option>  
+            <option value="Lats">Lats</option> 
+          </select>
+    </div>
+
+    <!--OR LIKE: 
+    having three seperate inputs? what's better UX hmmmm--> 
+
+    <div>
+        <label class="form-label" > Sets</label> 
+        <input name="sets" type="Number" class="form-control"> 
+    </div>
+
+    <div>
+        <label class="form-label" > Reps</label> 
+        <input type="number" name="reps">  
+    </div> 
+
+    <div> 
+        <label> Weight</label> 
+        <input name="weight" type="number"> 
+        <select type="text" name="weightUom">
+            <option value="lbs">lbs</option>
+            <option value="kg">kg</option>
+        </select>
+    </div>   
+
+    <div>
+        <label class="form-label" >Equipment Used</label> 
+        <input name="equipmentUsed" type="text" class="form-control"> 
+    </div>
+
+    <div>
+        <label class="form-label" > Comments</label> 
+        <input name="comments" type="text" class="form-control"> 
+    </div>
+
+    <button type="back">BACK</button> 
+    <button type="submit">SAVE</button> 
+
+</form> 
