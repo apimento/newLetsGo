@@ -1,5 +1,11 @@
 body { 
-    background-color:blanchedalmond;
+    background-color:rgb(50,50,50);
+    color: rgb(235,49,49); 
+        text-shadow: -0.5px 0.5px 0 rgb(223,244,255),
+                      0.5px 0.5px 0 rgb(223,244,255),
+                     0.5px -0.5px 0 rgb(223,244,255),
+                    -0.5px -0.5px 0 rgb(223,244,255);
+    
 };  
 
 .nav{ 
@@ -8,4 +14,5 @@ body {
 
 .menuAlignment { 
     text-align: right;
-}
+} 
+

@@ -1,6 +1,14 @@
-const router = require('express').Router(); 
+const express = require('express'); 
 //after npm i express-validator 
-const{body} = require("express-validator");
+const{body} = require("express-validator"); 
+
+var methodOverride = require("method-override") 
+
+const router = express.Router();  
+
+router.use(methodOverride('_method'))
+
+router.use(express.urlencoded({extended: true}));
 
 const authCntrl = require("../controllers/auth"); 
 

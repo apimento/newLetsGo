@@ -57,10 +57,12 @@ app.use(function(req, res, next){
 //anything used by routes must be before this
 //import route
 
-const authRoutes = require("./routes/auth");
+const authRoutes = require("./routes/auth"); 
+const indexRoute = require("./routes/index"); 
 
 //mount route
-app.use('/', authRoutes);
+app.use('/', authRoutes); 
+app.use('/',indexRoute);
 
 //nodejs to look in views folder for all ejs files  
 //will always look for folder called "views" (convention)

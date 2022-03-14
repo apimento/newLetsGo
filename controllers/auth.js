@@ -62,11 +62,11 @@ exports.auth_signin_get = (req, res) => {
 //HTTP POST- singIN- to post data  
 
 exports.auth_signin_post = 
-  passport.authenticate("local", { 
-       successRedirect:"/homepage", 
+  passport.authenticate("local", {  
+       successRedirect:"/", 
        failureRedirect: "/auth/signin",
         failureFlash: "Invalid username or password" ,
-        successFlash: "You have logged in successfully"
+        successFlash: "Welcome back!"
   })
 
 //HTTP GET- logOUt-  
