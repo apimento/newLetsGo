@@ -2,20 +2,28 @@
 <h2><%=workout.targetMuscleGroups1%> <%=workout.targetMuscleGroups2%> <%=workout.targetMuscleGroups3%></h2> 
 <h3><%=workout.legnthOfWorkout%> comments <%=workout.rating%></h3> 
 
-<div class="divButton">
+<table>
     <% workout.exercises.forEach(function(exercise) { %> 
-    <div > 
-        <div><%= exercise.name%>  <%= exercise.targetMuscleGroups1%> 
-            </div>   
+    <tr class="divRow">
+        <td><%= exercise.name%> (<%= exercise.targetMuscleGroups1%>)
+        <td class ="editButton">   E   </td>
+        <td class ="deleteButton">   X   </td>
+    </tr> 
         
-        <div class="collapsable">
-            Sets <%= exercise.sets%> Reps <%=exercise.reps%> Wt<%= exercise.weight %> <%=exercise.weightUom%> 
-            Equipment<%=exercise.equipmentUsed%> 
-            Comments <%=exercise.comments%>
-        </div>
+    <tr class="divRow">
+        <td><div class="collapsable">
+            <span id="heading">Sets</span> <%= exercise.sets%> <span id="heading">Reps</span> <%=exercise.reps%> <span id="heading">Wt</span><%= exercise.weight %> <%=exercise.weightUom%> 
+            <span id="heading">Equipment</span> <%=exercise.equipmentUsed%> 
+            <span id="heading">Comments</span> <%=exercise.comments%>
+        </div> 
+        </td>
+    </tr>
    <% }) %>
-</div>  
+</table>   
 
-<a href="/day/addExercise?id=<%=workout.id%>"><button type="submit" class="redButton">ADD NEW EXERCISE</button> </a>
+<br>
 
 <button type="back" class="backButton">BACK</button>
+<a href="/day/addExercise?id=<%=workout.id%>"><button type="submit" class="redButton">ADD NEW EXERCISE</button> </a>
+
+

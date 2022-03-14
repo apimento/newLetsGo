@@ -95,6 +95,11 @@ body{
 }
 
 
+#heading{ 
+    color: rgb(141, 29, 29);
+}
+
+
 .nav{ 
     float: left;
 }

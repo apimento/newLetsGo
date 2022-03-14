@@ -64,8 +64,8 @@ const exerciseRoute = require("./routes/exercise");
 
 //mount route
 app.use('/', authRoutes); 
-app.use('/',indexRoute); 
-app.use('/',workoutRoute); 
+app.use('/', indexRoute); 
+app.use('/', workoutRoute); 
 app.use('/', exerciseRoute);
 
 //nodejs to look in views folder for all ejs files  
