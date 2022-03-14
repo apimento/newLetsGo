@@ -58,11 +58,13 @@ app.use(function(req, res, next){
 //import route
 
 const authRoutes = require("./routes/auth"); 
-const indexRoute = require("./routes/index"); 
+const indexRoute = require("./routes/index");  
+const workoutRoute = require("./routes/workout");
 
 //mount route
 app.use('/', authRoutes); 
-app.use('/',indexRoute);
+app.use('/',indexRoute); 
+app.use('/',workoutRoute);
 
 //nodejs to look in views folder for all ejs files  
 //will always look for folder called "views" (convention)
@@ -78,7 +80,3 @@ mongoose.connect(process.env.mongoDBURL, {
 });
 
 app.listen(PORT, ()=> console.log(`App is running on ${PORT}`)); 
-
-// app.get("/a",(req,res) => { 
-//     res.render("home/another");
-// });
