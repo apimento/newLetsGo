@@ -1,17 +1,20 @@
-const express = require("express"); 
+const express = require("express");  
+const router = express.Router();  
 const { append } = require("express/lib/response");
 const isLoggedIn = require("../help/isLoggedIn");
 
 //after npm i method-override
 var methodOverride = require("method-override")
 
-const router = express.Router();  
-
 //must be below initialization of router
 router.use(methodOverride('_method'))
 
 router.use(express.urlencoded({extended: true}));  
 
-const exerciseCntrl = require("../controllers/exercise") 
+const exerciseCntrl = require("../controllers/exercise"); 
 
-router.get("/day/allExercises".exerciseCntrl.exercise_show_get);
+router.get("/day/allExercises",exerciseCntrl.exercise_show_get); 
+router.get("/day/addExercise",exerciseCntrl.exercise_add_get);  
+router.post('/day/addExercise',exerciseCntrl.exercise_add_post);
+
+module.exports = router;

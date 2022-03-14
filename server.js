@@ -59,12 +59,14 @@ app.use(function(req, res, next){
 
 const authRoutes = require("./routes/auth"); 
 const indexRoute = require("./routes/index");  
-const workoutRoute = require("./routes/workout");
+const workoutRoute = require("./routes/workout"); 
+const exerciseRoute = require("./routes/exercise"); 
 
 //mount route
 app.use('/', authRoutes); 
 app.use('/',indexRoute); 
-app.use('/',workoutRoute);
+app.use('/',workoutRoute); 
+app.use('/', exerciseRoute);
 
 //nodejs to look in views folder for all ejs files  
 //will always look for folder called "views" (convention)
