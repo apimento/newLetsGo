@@ -1,1 +1,16 @@
-<h1> Workout Log</h1> 
+<h1 class="title"> Workout Log</h1>  
+<table> 
+    <% workouts.forEach(function(workout){  %>
+        <tr class="divRow"> 
+                <td><a href="/workout/allWorkouts/<%=workout.id%>"><button class="divButton"><%=(workout.date).toDateString() %> 
+                <%=workout.targetMuscleGroups1 %></td>  
+           </button> </a>
+            <td class ="editButton">E</td>
+            <td class ="deleteButton">X</td>
+        </tr> 
+
+   <% }) %>
+</table>
+<br>
+<a href="/workout/addWorkout"><button type="submit" class="redButton">Add New Entry</button></a>
+

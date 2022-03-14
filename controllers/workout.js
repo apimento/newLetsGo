@@ -12,9 +12,10 @@ exports.workout_index_get = (req,res) => {
 
 exports.workout_create_post = (req, res) => { 
     console.log(req.body); 
-    let workout = new Workout(req.body)
+    let workout = new Workout(req.body);
+
     workout
-    .save() 
+    .save()  
     .then(()=>{ 
         res.redirect('/workout/allWorkouts');
     })
@@ -26,11 +27,12 @@ exports.workout_create_post = (req, res) => {
 };  
 
 exports.workout_create_get = (req, res) => { 
-    Workout.find()
-    .then(()=> { 
-        res.render('workout/addWorkout');
-    })
-    .catch((err) => { 
-        console.log(err);
-    })
- }
+        res.render('workout/addWorkout')
+ } 
+
+ exports.workout_show_get = (req, res) => { 
+     Workout.findById(req.params.id)
+     .then((workout) => { 
+        res.render("day/allExercises", {workout})
+     }
+    )}

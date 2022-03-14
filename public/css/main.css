@@ -1,12 +1,92 @@
-body { 
-    background-color:rgb(50,50,50);
+body{ 
+    background-color:rgb(50,50,50);  
     color: rgb(235,49,49); 
-        text-shadow: -0.5px 0.5px 0 rgb(223,244,255),
-                      0.5px 0.5px 0 rgb(223,244,255),
-                     0.5px -0.5px 0 rgb(223,244,255),
-                    -0.5px -0.5px 0 rgb(223,244,255);
+
+}  
+
+
+.title { 
+    color: rgb(235,49,49); 
+    text-shadow: -0.3px 0.3px 0 rgb(223,244,255),
+                  0.3px 0.3px 0 rgb(223,244,255),
+                 0.3px -0.3px 0 rgb(223,244,255),
+                -0.3px -0.3px 0 rgb(223,244,255);
+}
+
+
+.redButton { 
+    background-image: linear-gradient(rgb(241, 125, 125), rgb(235,49,49)  );    
+    color: rgb(255, 236, 236); 
+    border: 0.2px solid rgb(255,236,236); 
+
+    box-shadow: 8px 8px 50px black;
+}  
+
+
+
+.divButton{ 
+    background-image: linear-gradient(rgb(223,244,255), rgb(189,189,189) ); 
+    border: none;
+    color: rgb(235,49,49); 
+    text-shadow: -0.2px 0.2px 0 rgb(223,244,255),
+                  0.2px 0.2px 0 rgb(223,244,255),
+                 0.2px -0.2px 0 rgb(223,244,255),
+                -0.2px -0.2px 0 rgb(223,244,255); 
+} 
+
+.editButton{ 
+    color: rgb(50,50,50);  
+    background-image: linear-gradient(rgb(223,244,255), rgb(189,189,189) ); 
+    /* border: 0.3px solid rgb(255, 236, 236); */
+    text-shadow: -0.2px 0.2px 0 rgb(223,244,255),
+                  0.2px 0.2px 0 rgb(223,244,255),
+                 0.2px -0.2px 0 rgb(223,244,255),
+                -0.2px -0.2px 0 rgb(223,244,255); 
+
+} 
+
+.deleteButton{  
+    color: rgb(50,50,50);  
+    background-image: linear-gradient(rgb(223,244,255), rgb(189,189,189) ); 
+    /* border: 0.3px solid rgb(255, 236, 236); */
+    text-shadow: -0.2px 0.2px 0 rgb(223,244,255),
+                  0.2px 0.2px 0 rgb(223,244,255),
+                 0.2px -0.2px 0 rgb(223,244,255),
+                -0.2px -0.2px 0 rgb(223,244,255);  
+}  
+
+.divRow{ 
+    background-image: linear-gradient(rgb(223,244,255), rgb(189,189,189) ); 
+    /* border: 0.2px solid rgb(255, 236, 236);  */
+    border-bottom: rgb(189,189,189);
+    color: rgb(235,49,49); 
+    text-shadow: -0.2px 0.2px 0 rgb(223,244,255),
+                  0.2px 0.2px 0 rgb(223,244,255),
+                 0.2px -0.2px 0 rgb(223,244,255),
+                -0.2px -0.2px 0 rgb(223,244,255); 
+ 
+} 
+
+.homepageButton{
+    color: rgb(235,49,49); 
+    text-shadow: -0.2px 0.2px 0 rgb(223,244,255),
+                  0.2px 0.2px 0 rgb(223,244,255),
+                 0.2px -0.2px 0 rgb(223,244,255),
+                -0.2px -0.2px 0 rgb(223,244,255); 
+    border: 2.6px solid rgb(223,244,255);  
+    background-color: rgb(50,50,50);
+}
+
+.weight{ 
+    border: 3px solid rgb(223,244,255);  
+    background-color: rgb(50,50,50);
+    border-radius: 50%;  
+    height: 75px; 
+    width: 30px; 
+    display: inline-flex;
     
-};  
+}
+
 
 .nav{ 
     float: left;

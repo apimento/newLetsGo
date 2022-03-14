@@ -1,34 +1,15 @@
-<!-- muscle groups will have a forEach function like this 
-
-    DETAIL PAGE 
-<div>
-    Authors: 
-    <% article.author.forEach(function(author) { %> 
-        <hr> 
-    <div > 
-        <div>Author: <%= author.name %> </div> 
-
-        FORM(ADD.EJS)
-                <select name="author[]" multiple="multiple">
-            <%authors.forEach(function(author) { %>
-
-              <option value="<%=author.id%>"> <%= author.name %></option>
-            <% }) %>   
-
-            EXERCISES WILL HAVE TO BE SIMILAR 
---> 
-<h1>ADD ENTRY</h1> 
+<h1 class="title">New Entry</h1>  
 
 <form method="post" action="/workout/addWorkout" > 
 
     <div>
-       <label class="form-label" > Date</label> 
-       <input name="departs" type="datetime-local" class="form-control">
+       <label class="form-label"> Date</label> 
+       <input name="date" type="date">
     </div> 
 
     <div>
         <label class="form-label" > Target Muscle Groups</label> 
-        <select type="checkbox" name="targetMuscleGroup[]" multiple="multiple">
+        <select type="checkbox" name="targetMuscleGroups1" multiple="multiple">
             <option value="Legs">Legs</option>
             <option value="Chest">Chest</option>
             <option value="Shoulders">Shoulders</option>
@@ -47,8 +28,8 @@
             <option value="Triceps">Triceps</option>
             <option value="Traps">Traps</option>
             <option value="Delts">Delts</option>  
-            <option value="Lats">Lats</option> 
-          </select>
+            <option value="Lats">Lats</option>  
+            </select>
     </div>
 
     <!--OR LIKE: 
@@ -56,12 +37,13 @@
 
     <div>
         <label class="form-label" > Length of Workout</label> 
-        <input name="lengthOfWorkout" type="Number" class="form-control"> mins
+        <input name="lengthOfWorkout" type="Number"> mins
     </div>
 
     <div>
         <label class="form-label" > Rating</label> 
-        <select type="number" name="rating" placeholder="1-10">  
+        <input type="number" name="rating" min="1" max="10">
+        <!-- <select type="number" name="rating" placeholder="1-10">  
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option> 
@@ -72,7 +54,7 @@
         <option value="8">8</option>
         <option value="9">9</option> 
         <option value="10">10</option> 
-        </select>
+        </select> -->
     </div> 
 
     <div> 
@@ -80,7 +62,7 @@
         <input name="comments" type="text">
     </div>  
 
-    <button type="back">BACK</button> 
-    <button type="submit">SAVE</button> 
+    <button type="submit" class="redButton">SAVE</button>
 
 </form>  
+

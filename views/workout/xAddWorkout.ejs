@@ -1,10 +1,29 @@
-<h1>EDIT ENTRY</h1> 
+<!-- muscle groups will have a forEach function like this 
 
-<form method="post" action="/workout/editWorkout" > 
+    DETAIL PAGE 
+<div>
+    Authors: 
+    <% article.author.forEach(function(author) { %> 
+        <hr> 
+    <div > 
+        <div>Author: <%= author.name %> </div> 
+
+        FORM(ADD.EJS)
+                <select name="author[]" multiple="multiple">
+            <%authors.forEach(function(author) { %>
+
+              <option value="<%=author.id%>"> <%= author.name %></option>
+            <% }) %>   
+
+            EXERCISES WILL HAVE TO BE SIMILAR 
+--> 
+<h1>ADD ENTRY</h1> 
+
+<form method="post" action="/workout/addWorkout" > 
 
     <div>
-       <label class="form-label" > Date</label> 
-       <input name="departs" type="date">
+       <label class="form-label"> Date</label> 
+       <input name="departs" type="datetime-local" class="form-control">
     </div> 
 
     <div>
@@ -32,13 +51,12 @@
           </select>
     </div>
 
-    <!--OR: 
-    have three seperate inputs? where user only selects one?? what's better UX hmmmm.. 
-thinkging about thumb use and precision --> 
+    <!--OR LIKE: 
+    having three seperate inputs? what's better UX hmmmm--> 
 
     <div>
         <label class="form-label" > Length of Workout</label> 
-        <input name="lengthOfWorkout" type="Number"> mins
+        <input name="lengthOfWorkout" type="Number" class="form-control"> mins
     </div>
 
     <div>
@@ -60,11 +78,9 @@ thinkging about thumb use and precision -->
     <div> 
         <label> Comments</label> 
         <input name="comments" type="text">
-    </div>   
-
-</form> 
+    </div>  
 
     <button type="back">BACK</button> 
     <button type="submit">SAVE</button> 
 
- 
+</form>  
