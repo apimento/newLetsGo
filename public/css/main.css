@@ -1,10 +1,11 @@
 body{ 
-    background-color:rgb(50,50,50);  
+    background-image: radial-gradient(circle, rgb(20,20,20), rgb(35,35,40));
     color: rgb(235,49,49);  
     font-family: 'Merriweather Sans', sans-serif;
 font-family: 'Outfit', sans-serif;
 font-family: 'Roboto', sans-serif;
-font-family: 'Titillium Web', sans-serif;
+font-family: 'Titillium Web', sans-serif; 
+
 
 }  
 
@@ -23,7 +24,7 @@ font-family: 'Titillium Web', sans-serif;
     color: rgb(255, 236, 236); 
     border: 0.2px solid rgb(255,236,236); 
 
-    box-shadow: 8px 8px 50px black;
+    /* box-shadow: 8px 8px 50px black; */
 }  
 
 .backButton { 
@@ -63,7 +64,8 @@ font-family: 'Titillium Web', sans-serif;
     text-shadow: -0.2px 0.2px 0 rgb(223,244,255),
                   0.2px 0.2px 0 rgb(223,244,255),
                  0.2px -0.2px 0 rgb(223,244,255),
-                -0.2px -0.2px 0 rgb(223,244,255);  
+                -0.2px -0.2px 0 rgb(223,244,255); 
+    border:none; 
 }  
 
 .divRow{ 
