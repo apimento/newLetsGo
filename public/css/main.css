@@ -24,7 +24,6 @@ body{
     color: rgb(255, 236, 236); 
     /* border: 0.2px solid rgb(255,236,236);  */
     border: none;
-
     /* box-shadow: 8px 8px 50px black; */
 }  
 
@@ -33,8 +32,9 @@ body{
     color: rgb(50,50,50);
     /* border: 0.2px solid rgb(255,236,236);  */
     border: none;
-    box-shadow: 8px 8px 50px black;
+    box-shadow: 8px 8px 50px black; 
 }
+
 
 
 .divButton{ 
@@ -56,7 +56,12 @@ body{
                  0.2px -0.2px 0 rgb(223,244,255),
                 -0.2px -0.2px 0 rgb(223,244,255); 
 
-} 
+}  
+
+.editButton1{ 
+    color: rgb(50,50,50);  
+
+}
 
 .deleteButton{  
     color: rgb(50,50,50);  
@@ -67,7 +72,11 @@ body{
                  0.2px -0.2px 0 rgb(223,244,255),
                 -0.2px -0.2px 0 rgb(223,244,255); 
     border:none; 
-}  
+}   
+
+.deleteButton1{ 
+    color: rgb(50,50,50);  
+}
 
 .divRow{ 
     background-image: linear-gradient(rgb(223,244,255), rgb(189,189,189) ); 

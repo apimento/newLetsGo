@@ -3,22 +3,19 @@
 <h3><%=workout.legnthOfWorkout%> comments <div id="rating"><%=workout.rating%></div></h3>  
 
 
-<table>
+<table class="divRow">
     <% workout.exercises.forEach(function(exercise) { %> 
-    <tr class="divRow">
+    <tr >
         <td><%= exercise.name%> (<%= exercise.targetMuscleGroups1%>)
-        <td class ="editButton">   E   </td>
-        <td class ="deleteButton">   X   </td>
+        <td class ="editButton1" >   E   </td>
+        <td class ="deleteButton1" >   X   </td>
     </tr> 
-        
-    <tr class="divRow">
-        <td><div class="collapsable">
+
+    <tr class="collapsable" ><td>
             <span id="heading">Sets</span> <%= exercise.sets%> <span id="heading">Reps</span> <%=exercise.reps%> <span id="heading">Wt</span><%= exercise.weight %> <%=exercise.weightUom%> 
-            <span id="heading">Equipment</span> <%=exercise.equipmentUsed%> 
-            <span id="heading">Comments</span> <%=exercise.comments%>
-        </div> 
-        </td>
-    </tr>
+                </td>  </tr>
+    <tr class="collapsable"><td><span id="heading">Equipment</span> <%=exercise.equipmentUsed%> </td> </tr>
+    <tr class="collapsable"><td> <span id="heading">Comments</span> <%=exercise.comments%> </td> </tr>
    <% }) %>
 </table>   
 
