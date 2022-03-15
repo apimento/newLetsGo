@@ -1,7 +1,7 @@
-const Workout = require("../model/Workout")  
+const Workout = require("../model/Workout")    
 
 exports.exercise_show_get = (req,res) => { 
-    console.log(req.query.id);
+    // console.log(req.query.id);
     Workout.findById(req.query.id)
     .then(workout =>{ 
         res.render("day/allExercises", {workout})
@@ -16,9 +16,32 @@ exports.exercise_add_get = (req, res) => {
 }  
 
 exports.exercise_add_post = async (req,res) => { 
-    console.log(req.body.id);
+    // console.log(req.body.id);
     let workout = await Workout.findById(req.params.id)
-    workout.exercises.push(req.body); 
-    workout.save(); 
+    await workout.exercises.push(req.body); 
+    await workout.save(); 
     await res.redirect(`/day/allExercises?id=${req.params.id}`);
 };
+
+exports.exercise_delete = async (req,res) => {  
+    let workout = await Workout.findById(req.params.w_id)
+    // console.log(workout)   
+    let exercise = workout.exercises.findIndex(ex => ex.id == req.params.e_id)
+    // if (exercise < 0) throw new Error('Exercise not found')
+
+    let deletedExercise = workout.exercises.splice(exercise, 1)
+    console.log(deletedExercise) 
+
+    await workout.save(); 
+    res.redirect(`/day/allExercises?id=${req.params.w_id}`);
+    
+
+
+    // Workout.findByIdAndDelete(req.params.id)
+    // .then(() => {
+    //    res.redirect(`/day/allExercises?id=${req.params.id}`);
+    // })
+    // .catch(err=> { 
+    //     console.log(err)
+    // })
+}  

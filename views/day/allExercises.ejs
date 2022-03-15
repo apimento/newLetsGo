@@ -1,6 +1,7 @@
-<h1 class="title"><%=workout.date.toDateString() %></h1> 
-<h2><%=workout.targetMuscleGroups1%> <%=workout.targetMuscleGroups2%> <%=workout.targetMuscleGroups3%></h2> 
-<h3><%=workout.legnthOfWorkout%> comments <div id="rating"><%=workout.rating%></div></h3>  
+    <h1 class="title"><%=workout.date.toDateString() %></h1>
+    <h1><%=workout.targetMuscleGroups1%> <%=workout.targetMuscleGroups2%> <%=workout.targetMuscleGroups3%></h1>
+    <h5><%=workout.lengthOfWorkout%>mins <div id=commentsButton>comments</div> <div id="rating"><%=workout.rating%></div> </h5>
+
 
 
 <table class="divRow">
@@ -8,7 +9,8 @@
     <tr >
         <td><%= exercise.name%> (<%= exercise.targetMuscleGroups1%>)
         <td class ="editButton1" >   E   </td>
-        <td class ="deleteButton1" >   X   </td>
+        <td><form method="POST" action="/day/allExercises/delete/<%=workout.id%>/<%=exercise.id%>?_method=DELETE"> <button type="submit" class ="deleteButton1"> X </button>
+        </form> </td>
     </tr> 
 
     <tr class="collapsable" ><td>
@@ -22,6 +24,6 @@
 <br>
 
 <a href="/workout/allWorkouts"><button type="back" class="backButton">BACK</button></a>
-<a href="/day/addExercise?id=<%=workout.id%>"><button type="submit" class="redButton">ADD NEW EXERCISE</button> </a>
+<a href="/day/addExercise?id=<%=workout.id%>"><button class="redButton">ADD NEW EXERCISE</button> </a>
 
 
