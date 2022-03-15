@@ -1,6 +1,6 @@
     <h1 class="title"><%=workout.date.toDateString() %></h1>
     <h1><%=workout.targetMuscleGroups1%> <%=workout.targetMuscleGroups2%> <%=workout.targetMuscleGroups3%></h1>
-    <h5><%=workout.lengthOfWorkout%>mins <a href="workout/commentsWorkout"><button id="comments">comments</button> </a> <div id="rating"><%=workout.rating%></div> </h5>
+    <h5><%=workout.lengthOfWorkout%>mins <a href="workout/commentsWorkout"><button id="comments">comments</button></a> <div id="rating"><%=workout.rating%></div> </h5>
 
 
 
@@ -13,7 +13,7 @@
         </form> </td>
     </tr> 
 
-    <tr class="collapsable" ><td>
+    <tr class="collapsable"><td>
             <span id="heading">Sets</span> <%= exercise.sets%> <span id="heading">Reps</span> <%=exercise.reps%> <span id="heading">Wt</span><%= exercise.weight %> <%=exercise.weightUom%> 
                 </td>  </tr>
     <tr class="collapsable"><td><span id="heading">Equipment</span> <%=exercise.equipmentUsed%> </td> </tr>

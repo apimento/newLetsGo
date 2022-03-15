@@ -10,3 +10,15 @@ if (rating.outerText >= 8 ){
 } else { 
     rating.style.color = "rgb(255, 251, 11)";
 } 
+
+
+const openDetails = document.querySelector(".collapsable"); 
+openDetails.addEventListener("click", showDetails)
+
+function showDetails(){ 
+    if (openDetails.style.display == "none") { 
+        openDetails.style.display == "flex"
+    }else{
+        openDetails.style.display == "none"
+    }
+}
