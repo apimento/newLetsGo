@@ -1,6 +1,6 @@
 <h1>EDIT ENTRY</h1> 
 
-<form method="post" action="/workout/editWorkout" > 
+<form method="post" action="/workout/allWorkouts/update/<%=workout.id%>?_method=PUT" > 
 
     <div>
        <label class="form-label" > Date</label> 
@@ -38,12 +38,12 @@ thinkging about thumb use and precision -->
 
     <div>
         <label class="form-label" > Length of Workout</label> 
-        <input name="lengthOfWorkout" type="Number"> mins
+        <input name="lengthOfWorkout" type="Number" value="<%=workout.lengthOfWorkout%>"> mins
     </div>
 
     <div>
         <label class="form-label" > Rating</label> 
-        <select type="number" name="rating" placeholder="1-10">  
+        <select type="number" name="rating"  value="<%=workout.rating%>">  
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option> 
@@ -59,12 +59,12 @@ thinkging about thumb use and precision -->
 
     <div> 
         <label> Comments</label> 
-        <input name="comments" type="text">
+        <input name="comments" type="text" value="<%=workout.comments%>">
     </div>   
 
-</form> 
+   
+    <button type="submit" class="redButton">SAVE</button> 
+</form>
 
     <button type="back" class="backButton">BACK</button> 
-    <button type="submit" class="redButton">SAVE</button> 
-
  

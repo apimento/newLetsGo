@@ -45,4 +45,24 @@ exports.workout_delete = (req,res) => {
     .catch(err=> { 
         console.log(err)
     })
-}  
+}   
+
+exports.workout_edit_get = (req,res) => { 
+    Workout.findById(req.params.id) 
+    .then((workout) => { 
+        res.render("workout/editWorkout",  {workout} )
+    }) 
+    .catch(err=> { 
+        console.log(err)
+    })
+} 
+
+exports.workout_edit_put = (req,res) => { 
+    Workout.findByIdAndUpdate(req.params.id, req.body) 
+    .then(()=> { 
+        res.redirect("/workout/allWorkouts")
+    }) 
+    .catch(err => { 
+        console.log(err);
+    })
+}

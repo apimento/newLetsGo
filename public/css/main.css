@@ -60,7 +60,6 @@ body{
 
 .editButton1{ 
     color: rgb(50,50,50);  
-
 }
 
 .deleteButton{  
@@ -110,6 +109,16 @@ body{
     
 }
 
+.collapsable{ 
+    display:none;
+}
+ 
+#comments { 
+    background-color: rgb(20,20,20);
+    /* border: 0.5px solid rgb(235,49,49); */
+    color: rgb(235,49,49); 
+    border: none;
+}
 
 #heading{ 
     color: rgb(141, 29, 29);

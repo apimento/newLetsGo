@@ -37,11 +37,5 @@ exports.exercise_delete = async (req,res) => {
     
 
 
-    // Workout.findByIdAndDelete(req.params.id)
-    // .then(() => {
-    //    res.redirect(`/day/allExercises?id=${req.params.id}`);
-    // })
-    // .catch(err=> { 
-    //     console.log(err)
-    // })
+
 }  
