@@ -2,12 +2,12 @@
 <table> 
     <% workouts.forEach(function(workout){  %>
         <tr class="divRow"> 
-                <td><a href="/workout/allWorkouts/<%=workout.id%>"><button class="divButton"><%=(workout.date).toDateString() %> 
+                <td><a href="/workout/allWorkouts/<%=workout.id%>"><button class="divButton"><%=(workout.date).toDateString()%> 
                 <%=workout.targetMuscleGroups1 %></td>  
            </button> </a>
             <td class ="editButton">E</td>
-            <td><button type="submit" class ="deleteButton"><a href="<%= `workouts/${workout.id}/delete?_method=GET` %>"> X </a> </button>
-            </td>
+            <td><form method="POST" action="/workout/allWorkouts/delete/<%=workout.id%>?_method=DELETE"> <button type="submit" class ="deleteButton"> X </button>
+            </form</td>
         </tr> 
 
    <% }) %>

@@ -15,6 +15,6 @@ const exerciseCntrl = require("../controllers/exercise");
 
 router.get("/day/allExercises",exerciseCntrl.exercise_show_get); 
 router.get("/day/addExercise",exerciseCntrl.exercise_add_get);  
-router.post('/day/addExercise',exerciseCntrl.exercise_add_post);
+router.post("/day/addExercise/:id",exerciseCntrl.exercise_add_post);
 
 module.exports = router;

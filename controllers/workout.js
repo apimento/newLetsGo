@@ -37,8 +37,7 @@ exports.workout_show_get = (req, res) => {
      }
 )} 
 
-exports.workout_delete_get = (req,res) => { 
-    console.log(req.query.id); 
+exports.workout_delete = (req,res) => { 
     Workout.findByIdAndDelete(req.params.id)
     .then(() => {
        res.redirect("/workout/allWorkouts")  

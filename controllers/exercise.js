@@ -16,11 +16,9 @@ exports.exercise_add_get = (req, res) => {
 }  
 
 exports.exercise_add_post = async (req,res) => { 
-    console.log(req.body);
-    console.log(req.body.id) 
-    let workout = await Workout.findById(req.body.id)
-    console.log(workout);
+    console.log(req.body.id);
+    let workout = await Workout.findById(req.params.id)
     workout.exercises.push(req.body); 
     workout.save(); 
-    res.redirect(`/day/allExercises?id=${req.body.id}`)
+    await res.redirect(`/day/allExercises?id=${req.params.id}`);
 };

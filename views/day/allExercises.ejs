@@ -1,6 +1,7 @@
 <h1 class="title"><%=workout.date.toDateString() %></h1> 
 <h2><%=workout.targetMuscleGroups1%> <%=workout.targetMuscleGroups2%> <%=workout.targetMuscleGroups3%></h2> 
-<h3><%=workout.legnthOfWorkout%> comments <%=workout.rating%></h3> 
+<h3><%=workout.legnthOfWorkout%> comments <div id="rating"><%=workout.rating%></div></h3>  
+
 
 <table>
     <% workout.exercises.forEach(function(exercise) { %> 

@@ -18,6 +18,6 @@ router.get("/workout/allWorkouts", workoutCntrl.workout_index_get);
 router.get("/workout/addWorkout",workoutCntrl.workout_create_get);
 router.post("/workout/addWorkout",workoutCntrl.workout_create_post); 
 router.get("/workout/allWorkouts/:id", workoutCntrl.workout_show_get);  
-router.delete("/workout/allWorkouts/delete/:id", workoutCntrl.workout_delete_get);
+router.delete("/workout/allWorkouts/delete/:id", workoutCntrl.workout_delete);
 
 module.exports = router;

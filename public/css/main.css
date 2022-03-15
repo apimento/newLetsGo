@@ -1,12 +1,12 @@
+
+
+
 body{ 
-    background-image: radial-gradient(circle, rgb(20,20,20), rgb(35,35,40));
-    color: rgb(235,49,49);  
-    font-family: 'Merriweather Sans', sans-serif;
-font-family: 'Outfit', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Titillium Web', sans-serif; 
-
-
+    min-width: 360px; 
+    min-height: 640px;
+    background-image: linear-gradient(rgb(20,20,20), rgb(35,35,40)); 
+    background-repeat: "no-repeat";
+    color: rgb(235,49,49);   
 }  
 
 
@@ -20,9 +20,10 @@ font-family: 'Titillium Web', sans-serif;
 
 
 .redButton { 
-    background-image: linear-gradient(rgb(241, 125, 125), rgb(235,49,49)  );    
+    background-image: linear-gradient(rgb(255, 92, 92), rgb(235,49,49)  );    
     color: rgb(255, 236, 236); 
-    border: 0.2px solid rgb(255,236,236); 
+    /* border: 0.2px solid rgb(255,236,236);  */
+    border: none;
 
     /* box-shadow: 8px 8px 50px black; */
 }  
@@ -30,8 +31,8 @@ font-family: 'Titillium Web', sans-serif;
 .backButton { 
     background-image: linear-gradient(rgb(241, 125, 125), rgb(235,49,49)  );    
     color: rgb(50,50,50);
-    border: 0.2px solid rgb(255,236,236); 
-
+    /* border: 0.2px solid rgb(255,236,236);  */
+    border: none;
     box-shadow: 8px 8px 50px black;
 }
 
