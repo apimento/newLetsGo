@@ -1,6 +1,10 @@
 body{ 
     background-color:rgb(50,50,50);  
-    color: rgb(235,49,49); 
+    color: rgb(235,49,49);  
+    font-family: 'Merriweather Sans', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Titillium Web', sans-serif;
 
 }  
 

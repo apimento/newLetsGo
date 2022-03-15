@@ -28,11 +28,22 @@ exports.workout_create_post = (req, res) => {
 
 exports.workout_create_get = (req, res) => { 
         res.render('workout/addWorkout')
- } 
+} 
 
- exports.workout_show_get = (req, res) => { 
+exports.workout_show_get = (req, res) => { 
      Workout.findById(req.params.id)
      .then((workout) => { 
         res.render("day/allExercises", {workout})
      }
-    )}
+)} 
+
+exports.workout_delete_get = (req,res) => { 
+    console.log(req.query.id); 
+    Workout.findByIdAndDelete(req.params.id)
+    .then(() => {
+       res.redirect("/workout/allWorkouts")  
+    })
+    .catch(err=> { 
+        console.log(err)
+    })
+}  

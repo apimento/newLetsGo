@@ -88,24 +88,12 @@
 
     <div>
         <label class="form-label" > Length of Workout</label> 
-        <input name="lengthOfWorkout" type="Number"> mins
+        <input name="lengthOfWorkout" type="Number" min="1"> mins
     </div>
 
     <div>
         <label class="form-label" > Rating</label> 
         <input type="number" name="rating" min="1" max="10">
-        <!-- <select type="number" name="rating" placeholder="1-10">  
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option> 
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option> 
-        <option value="10">10</option> 
-        </select> -->
     </div> 
 
     <div> 
@@ -113,6 +101,9 @@
         <input name="comments" type="text">
     </div>  
 
+    <br> 
+    
+    <button type="back" class="backButton">BACK</button>
     <button type="submit" class="redButton">SAVE</button>
 
 </form>  
