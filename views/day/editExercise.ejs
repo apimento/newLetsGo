@@ -1,123 +1,130 @@
-<h1 class="title">EDIT EXERCISE</h1> 
+<h1 class="title">EDIT EXERCISE</h1>  
 
-<form method="post" action="/day/allExercises/update/<%=workout.id%>/<%=exercise.id%>?_method=PUT" > 
-
-    <div>
-       <label class="form-label">Name</label> <br>
-       <input name="name" type="text" >
-    </div> 
-
-    <div>
-        <label class="form-label" > Target Muscle Groups</label> <br>
-        <select type="text" name="targetMuscleGroups1" > 
-            <option value="Legs">Legs</option>
-            <option value="Chest">Chest</option>
-            <option value="Shoulders">Shoulders</option>
-            <option value="Back">Back</option>
-            <option value="Arms">Arms</option>
-            <option value="Core">Core</option>  
-            <option value="Cardio">Cardio</option>
-            <option value="- - -">- - -</option>
-            <option value="Calves">Calves</option>
-            <option value="Quads">Quads</option> 
-            <option value="Hamstrings">Hamstrings</option>
-            <option value="Glutes">Glutes</option>
-            <option value="Obliques">Obliques</option>
-            <option value="Abs">Abs</option> 
-            <option value="Biceps">Biceps</option>
-            <option value="Triceps">Triceps</option>
-            <option value="Traps">Traps</option>
-            <option value="Delts">Delts</option>  
-            <option value="Lats">Lats</option> 
-          </select>
-    </div>
-
-    <div>
-        <label class="form-label" > Target Muscle Groups</label> <br>
-        <select type="text" name="targetMuscleGroups2" > 
-            <option value='  '>    </option>
-            <option value="Legs">Legs</option>
-            <option value="Chest">Chest</option>
-            <option value="Shoulders">Shoulders</option>
-            <option value="Back">Back</option>
-            <option value="Arms">Arms</option>
-            <option value="Core">Core</option>  
-            <option value="Cardio">Cardio</option>
-            <option value="- - -">- - -</option>
-            <option value="Calves">Calves</option>
-            <option value="Quads">Quads</option> 
-            <option value="Hamstrings">Hamstrings</option>
-            <option value="Glutes">Glutes</option>
-            <option value="Obliques">Obliques</option>
-            <option value="Abs">Abs</option> 
-            <option value="Biceps">Biceps</option>
-            <option value="Triceps">Triceps</option>
-            <option value="Traps">Traps</option>
-            <option value="Delts">Delts</option>  
-            <option value="Lats">Lats</option> 
-          </select>
-    </div> 
-
-    <div>
-        <label class="form-label" > Target Muscle Groups</label> <br>
-        <select type="text" name="targetMuscleGroups3" > 
-            <option value='  '>    </option>
-            <option value="Legs">Legs</option>
-            <option value="Chest">Chest</option>
-            <option value="Shoulders">Shoulders</option>
-            <option value="Back">Back</option>
-            <option value="Arms">Arms</option>
-            <option value="Core">Core</option>  
-            <option value="Cardio">Cardio</option>
-            <option value="- - -">- - -</option>
-            <option value="Calves">Calves</option>
-            <option value="Quads">Quads</option> 
-            <option value="Hamstrings">Hamstrings</option>
-            <option value="Glutes">Glutes</option>
-            <option value="Obliques">Obliques</option>
-            <option value="Abs">Abs</option> 
-            <option value="Biceps">Biceps</option>
-            <option value="Triceps">Triceps</option>
-            <option value="Traps">Traps</option>
-            <option value="Delts">Delts</option>  
-            <option value="Lats">Lats</option> 
-          </select>
-    </div> 
-
-    
-
-    <div>
-        <label class="form-label" > Sets</label> <br>
-        <input name="sets" type="Number"> 
-    </div>
-
-    <div>
-        <label class="form-label" > Reps</label> <br>
-        <input type="number" name="reps">  
-    </div> 
-
-    <div> 
-        <label> Weight</label> <br>
-        <input name="weight" type="number"> 
-        <select type="text" name="weightUom">
-            <option value="lbs">lbs</option>
-            <option value="kg">kg</option>
-        </select>
-    </div>   
-
-    <div>
-        <label class="form-label" >Equipment Used</label> <br>
-        <input name="equipmentUsed" type="text" value="<%= exercise.equipmentUsed %>"> 
-    </div>
-
-    <div>
-        <label class="form-label" > Comments</label> <br>
-        <input name="comments" type="text"> 
-    </div>
-
-    <br> 
-
-    <button type="back" class="backButton">BACK</button> 
-    <button type="submit" class="redButton">SAVE</button>
-
-</form>  
+<form  method="post" action="/day/allExercises/update/<%=workout.id%>/<%=exercise.id%>?_method=PUT" > 
+ 
+        <label class="form-label">Name</label> <br>
+        <input name="name" type="text" value="<%=exercise.name%>" > 
+        <br>
+        <br>
+ 
+ 
+         <label class="form-label" > Target Muscle Groups</label> <br>
+         <select type="text" name="targetMuscleGroups1" value="<%=exercise.targetMuscleGroups1%>" > 
+             <option value="Legs">Legs</option>
+             <option value="Chest">Chest</option>
+             <option value="Shoulders">Shoulders</option>
+             <option value="Back">Back</option>
+             <option value="Arms">Arms</option>
+             <option value="Core">Core</option>  
+             <option value="Cardio">Cardio</option>
+             <option value="- - -">- - -</option>
+             <option value="Calves">Calves</option>
+             <option value="Quads">Quads</option> 
+             <option value="Hamstrings">Hamstrings</option>
+             <option value="Glutes">Glutes</option>
+             <option value="Obliques">Obliques</option>
+             <option value="Abs">Abs</option> 
+             <option value="Biceps">Biceps</option>
+             <option value="Triceps">Triceps</option>
+             <option value="Traps">Traps</option>
+             <option value="Delts">Delts</option>  
+             <option value="Lats">Lats</option> 
+         </select>  
+         <br> 
+ 
+ 
+         <label class="form-label" > Target Muscle Groups</label> <br>
+         <select type="text" name="targetMuscleGroups2" value="<%=exercise.targetMuscleGroups2%>" >  
+             <option value='  '>  </option>
+             <option value="Legs">Legs</option>
+             <option value="Chest">Chest</option>
+             <option value="Shoulders">Shoulders</option>
+             <option value="Back">Back</option>
+             <option value="Arms">Arms</option>
+             <option value="Core">Core</option>  
+             <option value="Cardio">Cardio</option>
+             <option value="- - -">- - -</option>
+             <option value="Calves">Calves</option>
+             <option value="Quads">Quads</option> 
+             <option value="Hamstrings">Hamstrings</option>
+             <option value="Glutes">Glutes</option>
+             <option value="Obliques">Obliques</option>
+             <option value="Abs">Abs</option> 
+             <option value="Biceps">Biceps</option>
+             <option value="Triceps">Triceps</option>
+             <option value="Traps">Traps</option>
+             <option value="Delts">Delts</option>  
+             <option value="Lats">Lats</option> 
+         </select>  
+         <br>
+ 
+ 
+         <label class="form-label" > Target Muscle Groups</label> <br>
+         <select type="text" name="targetMuscleGroups3" value="<%=exercise.targetMuscleGroups3%>" >  
+             <option value='  '>  </option>
+             <option value="Legs">Legs</option>
+             <option value="Chest">Chest</option>
+             <option value="Shoulders">Shoulders</option>
+             <option value="Back">Back</option>
+             <option value="Arms">Arms</option>
+             <option value="Core">Core</option>  
+             <option value="Cardio">Cardio</option>
+             <option value="- - -">- - -</option>
+             <option value="Calves">Calves</option>
+             <option value="Quads">Quads</option> 
+             <option value="Hamstrings">Hamstrings</option>
+             <option value="Glutes">Glutes</option>
+             <option value="Obliques">Obliques</option>
+             <option value="Abs">Abs</option> 
+             <option value="Biceps">Biceps</option>
+             <option value="Triceps">Triceps</option>
+             <option value="Traps">Traps</option>
+             <option value="Delts">Delts</option>  
+             <option value="Lats">Lats</option> 
+         </select>  
+         <br>
+         <br>
+ 
+ 
+     
+ <div class="inline"> 
+         <label class="form-label"> Sets</label> <br>
+         <input name="sets" type="Number" min="1" max="999" value="<%=exercise.sets%>"> <br> 
+ </div>
+ <div class="inline">
+         <label class="form-label"> Reps</label> <br>
+         <input type="number" name="reps" min="1" max="999" value="<%=exercise.reps%>">  
+ </div> 
+ 
+ <br>
+ <br>
+ 
+ 
+         <label> Weight</label> <br>
+         <input name="weight" type="number" min="1" max="999" value="<%=exercise.weight%>"> 
+         <select type="text" name="weightUom" value="<%=exercise.weightUom%>">
+             <option value="lbs">lbs</option>
+             <option value="kg">kg</option> 
+         </select>  
+         <br>
+         <br>
+ 
+         <label class="form-label" >Equipment Used</label> <br>
+         <input name="equipmentUsed" type="text" value="<%=exercise.equipmentUsed%>">  
+         <br>
+         <br>
+ 
+ 
+         <label class="form-label" > Comments</label> <br>
+         <input name="comments" type="text" value="<%=exercise.comments%>">  
+ 
+ 
+     <br> 
+     <br>
+ 
+ 
+     <button type="back" class="backButton">BACK</button> 
+     <button type="submit" class="redButton">SAVE</button>
+ 
+ 
+ </form>  

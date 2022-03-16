@@ -159,7 +159,3 @@ font-family: 'Secular One', sans-serif;
 .inline{ 
     display: inline-table;
 }
-
-.container{ 
-    row-gap: 4px;
-}
