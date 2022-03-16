@@ -1,7 +1,7 @@
 
-    <h1 class="title"><%=workout.date.toDateString() %></h1>
+    <h1 class="title"><%=(workout.date).toDateString() %></h1>
     <h1><%=workout.targetMuscleGroups1%> <%=workout.targetMuscleGroups2%> <%=workout.targetMuscleGroups3%></h1>
-    <h5><%=workout.lengthOfWorkout%>mins <a href="/workout/commentsWorkout?id=<%=workout.id%>"><button id="comments">comments</button></a> <div id="rating"><%=workout.rating%></div> </h5>
+    <h5><%=workout.lengthOfWorkout%>mins <a href="/workout/commentsWorkout/<%=workout.id%>"><button id="comments">comments</button></a> <div id="rating"><%=workout.rating%></div> </h5>
 
 
 
@@ -9,7 +9,7 @@
     <% workout.exercises.forEach(function(exercise) { %> 
     <tr >
         <td> <%= exercise.name%> (<%= exercise.targetMuscleGroups1%>)
-        <td class ="editButton1" >   E   </td>
+        <td class ="editButton1"><a href="/day/allExercises/edit/<%=workout.id %>/<%=exercise.id%>">E</a></td>
         <td><form method="POST" action="/day/allExercises/delete/<%=workout.id%>/<%=exercise.id%>?_method=DELETE"> <button type="submit" class ="deleteButton1"> X </button>
         </form> </td>
     </tr> 

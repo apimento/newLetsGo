@@ -34,8 +34,31 @@ exports.exercise_delete = async (req,res) => {
 
     await workout.save(); 
     res.redirect(`/day/allExercises?id=${req.params.w_id}`);
-    
+}   
+
+exports.exercise_edit_get = async (req,res) => { 
+    let workout = await Workout.findById(req.params.w_id) 
+    let exercise = await workout.exercises.find(ex => ex.id == req.params.e_id) 
+    // console.log(exercise);
+    await res.render("day/editExercise" , {workout , exercise })
+} 
+
+exports.exercise_edit_put = async (req,res) => { 
+    let workout = await Workout.findById(req.params.w_id)  
+    console.log(workout); 
+    let tempExerciseId = req.params.e_id 
+    let exercise = await workout.exercises.findIndex(ex => ex.id == req.params.e_id)   
+    workout.exercises.splice(exercise, 1)
+    //saves new id to exercise data 
+    req.body._id= tempExerciseId
+    workout.exercises.push(req.body);
+    // await exercise.save();  
+    await workout.save();
+    res.redirect(`/day/allExercises?id=${req.params.w_id}`)
+} 
 
 
 
-}  
+//need acces to child doc 
+//workout.findById use line 41 to fiter ex 
+// use req.body to change info from exercis eexercise.name=req.body.name

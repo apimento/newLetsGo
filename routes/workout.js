@@ -21,6 +21,6 @@ router.get("/workout/allWorkouts/:id", workoutCntrl.workout_show_get);
 router.delete("/workout/allWorkouts/delete/:id", workoutCntrl.workout_delete); 
 router.get("/workout/allWorkouts/edit/:id", workoutCntrl.workout_edit_get); 
 router.put("/workout/allWorkouts/update/:id", workoutCntrl.workout_edit_put) 
-router.get("/workout/commentsWorkout:id" , workoutCntrl.comments_view_get);
+router.get("/workout/commentsWorkout/:id" , workoutCntrl.comments_show_get);
 
 module.exports = router;

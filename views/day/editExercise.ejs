@@ -1,6 +1,6 @@
 <h1 class="title">EDIT EXERCISE</h1> 
 
-<form method="put" action="/day/editExercise" > 
+<form method="post" action="/day/allExercises/update/<%=workout.id%>/<%=exercise.id%>?_method=PUT" > 
 
     <div>
        <label class="form-label">Name</label> <br>
@@ -107,7 +107,7 @@
 
     <div>
         <label class="form-label" >Equipment Used</label> <br>
-        <input name="equipmentUsed" type="text"> 
+        <input name="equipmentUsed" type="text" value="<%= exercise.equipmentUsed %>"> 
     </div>
 
     <div>
@@ -118,6 +118,6 @@
     <br> 
 
     <button type="back" class="backButton">BACK</button> 
-    <a href="day/allExercises"><button type="submit" class="redButton">SAVE</button> </a>
+    <button type="submit" class="redButton">SAVE</button>
 
 </form>  

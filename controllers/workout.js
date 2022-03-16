@@ -67,9 +67,9 @@ exports.workout_edit_put = (req,res) => {
     })
 }
 
-exports.comments_view_get = (req , res) => { 
+exports.comments_show_get = (req , res) => { 
     Workout.findById(req.params.id) 
-    then((workout) => { 
+    .then((workout) => { 
         res.render("workout/commentsWorkout", {workout} )
     }) 
     .catch(err=> { 
