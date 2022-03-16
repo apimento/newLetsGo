@@ -106,8 +106,12 @@ body{
     
 }
 
-.collapsable{ 
-    display: flex;
+.collapsed{ 
+    display: none;
+} 
+
+.notcollapsed{ 
+    display: flex
 }
  
 #comments { 

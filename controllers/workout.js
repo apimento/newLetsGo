@@ -66,3 +66,13 @@ exports.workout_edit_put = (req,res) => {
         console.log(err);
     })
 }
+
+exports.comments_view_get = (req , res) => { 
+    Workout.findById(req.params.id) 
+    then((workout) => { 
+        res.render("workout/commentsWorkout", {workout} )
+    }) 
+    .catch(err=> { 
+        console.log(err)
+    })
+}

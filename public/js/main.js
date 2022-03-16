@@ -12,13 +12,18 @@ if (rating.outerText >= 8 ){
 } 
 
 
-const openDetails = document.querySelector(".collapsable"); 
-openDetails.addEventListener("click", showDetails)
+// function showDetails() {
+//     var element = document.getElementsByClassName("collapsed");
+//     element.classList.toggle("notcollapsed");
+//   }
 
-function showDetails(){ 
-    if (openDetails.style.display == "none") { 
-        openDetails.style.display == "flex"
-    }else{
-        openDetails.style.display == "none"
-    }
-}
+// const openDetails = document.querySelector(".collapsable"); 
+// openDetails.addEventListener("click", showDetails)
+
+// function showDetails(){ 
+//     if (openDetails.style.display == "none") { 
+//         openDetails.style.display == "flex"
+//     }else{
+//         openDetails.style.display == "none"
+//     }
+// }

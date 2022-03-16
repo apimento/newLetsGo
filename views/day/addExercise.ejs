@@ -1,14 +1,26 @@
-<h1 class="title">ADD EXERCISE</h1> 
+<form class="container" method="post" action="/day/addExercise/<%=id %>" > 
 
-<form method="post" action="/day/addExercise/<%=id %>" > 
+<div class="row"> 
+<div class="col"></div>
+    <div class="col-9"><h1 class="title">ADD EXERCISE</h1>  </div>
+</div> 
+<div class="col"></div>
 
-    <div>
-       <label class="form-label">Name</label> 
+<div class="row">
+<div class="col"> </div>
+    <div class="col-2">
+       <label class="form-label"> Name</label> <br>
        <input name="name" type="text" >
-    </div> 
+    </div>  
+<div class="col"> </div> 
+<div class="col"> </div>
+</div>
 
-    <div>
-        <label class="form-label" > Target Muscle Groups</label> 
+<div class="row">
+    <div class="col"> </div> 
+    <div class="col"> </div>
+    <div class="col-8">
+        <label class="form-label" > Target Muscle Groups</label> <br>
         <select type="text" name="targetMuscleGroups1" > 
             <option value="Legs">Legs</option>
             <option value="Chest">Chest</option>
@@ -29,13 +41,18 @@
             <option value="Traps">Traps</option>
             <option value="Delts">Delts</option>  
             <option value="Lats">Lats</option> 
-          </select>
-    </div>
+        </select> 
+        <div class="col"> </div>
+    </div> 
+</div>
 
-    <div>
-        <label class="form-label" > Target Muscle Groups</label> 
-        <select type="text" name="targetMuscleGroups2" > 
-            <option value='  '>    </option>
+
+<div class="row">
+    <div class="col"> </div> 
+    <div class="col-8">
+        <label class="form-label" > Target Muscle Groups</label> <br>
+        <select type="text" name="targetMuscleGroups2" >  
+            <option value="    ">    </option>
             <option value="Legs">Legs</option>
             <option value="Chest">Chest</option>
             <option value="Shoulders">Shoulders</option>
@@ -55,13 +72,17 @@
             <option value="Traps">Traps</option>
             <option value="Delts">Delts</option>  
             <option value="Lats">Lats</option> 
-          </select>
+        </select> 
+    <div class="col"> </div>
     </div> 
+</div> 
 
-    <div>
-        <label class="form-label" > Target Muscle Groups</label> 
-        <select type="text" name="targetMuscleGroups3" > 
-            <option value='  '>    </option>
+<div class="row">
+    <div class="col"> </div>
+    <div class="col-8">
+        <label class="form-label" > Target Muscle Groups</label> <br>
+        <select type="text" name="targetMuscleGroups3" >  
+            <option value="    ">    </option>
             <option value="Legs">Legs</option>
             <option value="Chest">Chest</option>
             <option value="Shoulders">Shoulders</option>
@@ -81,45 +102,71 @@
             <option value="Traps">Traps</option>
             <option value="Delts">Delts</option>  
             <option value="Lats">Lats</option> 
-          </select>
+        </select> 
+        <div class="col"> </div>
     </div> 
+</div>
 
     
 
-    <div>
-        <label class="form-label" > Sets</label> 
+<div class="row justify-content-center"> 
+    <div class="col-5">
+        <label class="form-label" > Sets</label> <br>
         <input name="sets" type="Number"> 
     </div>
-
-    <div>
-        <label class="form-label" > Reps</label> 
+    <div class="col-5">
+        <label class="form-label" > Reps</label> <br>
         <input type="number" name="reps">  
-    </div> 
+    </div>  
+</div>
 
-    <div> 
-        <label> Weight</label> 
+
+    <div class="row">
+        <div class="col"> </div>
+        <div class="col-6">
+        <label> Weight</label> <br>
         <input name="weight" type="number"> 
         <select type="text" name="weightUom">
             <option value="lbs">lbs</option>
-            <option value="kg">kg</option>
-        </select>
+            <option value="kg">kg</option> 
+        </select> 
+        </div> 
+        <div class="col"> </div>
     </div>   
 
-    <div>
-        <label class="form-label" >Equipment Used</label> 
-        <input name="equipmentUsed" type="text"> 
-    </div>
+<div class="row">
+        <div class="col"> </div> 
+        <div class="col-5">
+        <label class="form-label" >Equipment Used</label> <br>
+        <input name="equipmentUsed" type="text">  
+        </div> 
+        <div class="col"> </div> 
+</div>
 
-    <div>
-        <label class="form-label" > Comments</label> 
+<div class="row">
+    <div class="col"> </div> 
+    <div class="col-2">
+        <label class="form-label" > Comments</label> <br>
         <input name="comments" type="text"> 
-    </div>
+    </div> 
+    <div class="col"> </div>  
+    <div class="col"> </div> 
+</div>
 
     <br> 
 
-    <!-- <input type="text" value="<%=id %>" name="id"> -->
+    <!-- <input type="text" value="<%=id %>" name="id"> --> 
 
-    <a href="/day/allExercises"><button type="back" class="backButton">BACK</button> </a>
-    <button type="submit" class="redButton">ADD TO WORKOUT</button>
+<div class="row">
+        <div class="col"> </div> 
+    <div class="col">
+        <a href="/day/allExercises"><button type="back" class="backButton">BACK</button> </a> 
+    </div>
+    <div class="col">
+    <button type="submit" class="redButton">ADD TO WORKOUT</button>  
+    </div>
+    <div class="col"> </div>
+</div>
+
 
 </form>  
