@@ -1,25 +1,14 @@
 <form  method="post" action="/day/addExercise/<%=id %>" > 
 
-<div class=""> 
-<div class=""></div>
-    <div class=""><h1 class="title">ADD EXERCISE</h1>  </div>
-</div> 
-<div class=""></div>
 
-<div class="">
-<div class=""> </div>
-    <div class="">
-       <label class="form-label"> Name</label> <br>
-       <input name="name" type="text" >
-    </div>  
-<div class=""> </div> 
-<div class=""> </div>
-</div>
+   <h1 class="title">ADD EXERCISE</h1>  
 
-<div class="">
-    <div class=""> </div> 
-    <div class=""> </div>
-    <div class="">
+       <label class="form-label">Name</label> <br>
+       <input name="name" type="text" > 
+       <br>
+       <br>
+
+
         <label class="form-label" > Target Muscle Groups</label> <br>
         <select type="text" name="targetMuscleGroups1" > 
             <option value="Legs">Legs</option>
@@ -41,15 +30,10 @@
             <option value="Traps">Traps</option>
             <option value="Delts">Delts</option>  
             <option value="Lats">Lats</option> 
-        </select> 
-        <div class=""> </div>
-    </div> 
-</div>
+        </select>  
+        <br> 
 
 
-<div class="">
-    <div class=""> </div> 
-    <div class="">
         <label class="form-label" > Target Muscle Groups</label> <br>
         <select type="text" name="targetMuscleGroups2" >  
             <option value='  '>  </option>
@@ -72,14 +56,10 @@
             <option value="Traps">Traps</option>
             <option value="Delts">Delts</option>  
             <option value="Lats">Lats</option> 
-        </select> 
-    <div class=""> </div>
-    </div> 
-</div> 
+        </select>  
+        <br>
 
-<div class="">
-    <div class=""> </div>
-    <div class="">
+
         <label class="form-label" > Target Muscle Groups</label> <br>
         <select type="text" name="targetMuscleGroups3" >  
             <option value='  '>  </option>
@@ -102,70 +82,52 @@
             <option value="Traps">Traps</option>
             <option value="Delts">Delts</option>  
             <option value="Lats">Lats</option> 
-        </select> 
-        <div class="col"> </div>
-    </div> 
-</div>
+        </select>  
+        <br>
+        <br>
+
 
     
-
-<div class=""> 
-    <div class="">
-        <label class="form-label" > Sets</label> <br>
-        <input name="sets" type="Number"> 
-    </div>
-    <div class="">
-        <label class="form-label"> Reps</label> <br>
-        <input type="number" name="reps">  
-    </div>  
+<div class="inline"> 
+        <label class="form-label"> Sets</label> <br>
+        <input name="sets" type="Number" min="1" max="999"> <br> 
 </div>
+<div class="inline">
+        <label class="form-label"> Reps</label> <br>
+        <input type="number" name="reps" min="1" max="999">  
+</div> 
+
+<br>
+<br>
 
 
-    <div class="">
-        <div class=""> </div>
-        <div class="">
         <label> Weight</label> <br>
-        <input name="weight" type="number"> 
+        <input name="weight" type="number" min="1" max="999"> 
         <select type="text" name="weightUom">
             <option value="lbs">lbs</option>
             <option value="kg">kg</option> 
-        </select> 
-        </div> 
-        <div class=""> </div>
-    </div>   
+        </select>  
+        <br>
+        <br>
 
-<div class="">
-        <div class=""> </div> 
-        <div class="">
         <label class="form-label" >Equipment Used</label> <br>
         <input name="equipmentUsed" type="text">  
-        </div> 
-        <div class="col"> </div> 
-</div>
+        <br>
+        <br>
 
-<div class="">
-    <div class=""> </div> 
-    <div class="">
+
         <label class="form-label" > Comments</label> <br>
-        <input name="comments" type="text"> 
-    </div> 
-    <div class="col"> </div>  
-    <div class="col"> </div> 
-</div>
+        <input name="comments" type="text">  
+
 
     <br> 
+    <br>
 
     <!-- <input type="text" value="<%=id %>" name="id"> --> 
 
-<div class="">
-        <div class=""> </div> 
-    <div class="col">
+<div class="row">
         <a href="/day/allExercises"><button type="back" class="backButton">BACK</button> </a> 
-    </div>
-    <div class="">
     <button type="submit" class="redButton">ADD TO WORKOUT</button>  
-    </div>
-    <div class="col"> </div>
 </div>
 
 

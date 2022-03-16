@@ -5,6 +5,9 @@ body{
     background-repeat: "no-repeat";
     color: rgb(235,49,49);    
     text-align: center;
+    font-family: 'Outfit', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Secular One', sans-serif;
 }  
 
 
@@ -21,19 +24,23 @@ body{
 .redButton { 
     background-image: linear-gradient(rgb(255, 92, 92), rgb(235,49,49)  );    
     color: rgb(255, 236, 236); 
-    /* border: 0.2px solid rgb(255,236,236);  */
-    border: none;
+    border: 0.2px solid rgb(255,236,236); 
+    /* border: none; */
     /* box-shadow: 8px 8px 50px black; */ 
-    display: inline-table;
+    display: inline-table; 
+    height:4em; 
+    width: 8em; 
 }  
 
 .backButton { 
     background-image: linear-gradient(rgb(241, 125, 125), rgb(235,49,49)  );    
     color: rgb(50,50,50);
-    /* border: 0.2px solid rgb(255,236,236);  */
-    border: none;
+    border: 0.2px solid rgb(255,236,236); 
+    /* border: none; */
     box-shadow: 8px 8px 50px black;  
-    display: inline-table;
+    display: inline-table; 
+    width: 5em; 
+    margin-right: 2em;
 }
 
 
@@ -46,8 +53,6 @@ body{
                   0.2px 0.2px 0 rgb(223,244,255),
                  0.2px -0.2px 0 rgb(223,244,255),
                 -0.2px -0.2px 0 rgb(223,244,255); 
-    margin-left: auto; 
-    margin-right: auto;
 } 
 
 .editButton{ 
@@ -62,7 +67,8 @@ body{
 }  
 
 .editButton1{ 
-    color: rgb(50,50,50);  
+    color: rgb(50,50,50);   
+    border: none;
 }
 
 .deleteButton{  
@@ -89,8 +95,8 @@ body{
                   0.2px 0.2px 0 rgb(223,244,255),
                  0.2px -0.2px 0 rgb(223,244,255),
                 -0.2px -0.2px 0 rgb(223,244,255);  
-align-items: center;
- 
+    margin-left: auto; 
+    margin-right: auto;
 } 
 
 .homepageButton{
@@ -148,5 +154,12 @@ align-items: center;
 
 .commentsBlock{ 
     background-image: linear-gradient(rgb(223,244,255), rgb(189,189,189)); 
+} 
+
+.inline{ 
+    display: inline-table;
 }
 
+.container{ 
+    row-gap: 4px;
+}
