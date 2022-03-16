@@ -5,7 +5,7 @@
                 <td><a href="/workout/allWorkouts/<%=workout.id%>"><button class="divButton"><%=(workout.date).toDateString()%> 
                 <%=workout.targetMuscleGroups1 %></td>  
            </button> </a>
-            <td class ="editButton"><a href="/workout/allWorkouts/edit/<%=workout.id %>">E</a></td>
+            <td ><a href="/workout/allWorkouts/edit/<%=workout.id %>"><button type="submit" class ="editButton">E</button></a></td>
             <td><form method="POST" action="/workout/allWorkouts/delete/<%=workout.id%>?_method=DELETE"> <button type="submit" class ="deleteButton"> X </button>
             </form> </td>
         </tr> 

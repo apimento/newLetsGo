@@ -3,7 +3,8 @@ body{
     min-height: 640px;
     background-image: linear-gradient(rgb(20,20,20), rgb(35,35,40)); 
     background-repeat: "no-repeat";
-    color: rgb(235,49,49);   
+    color: rgb(235,49,49);    
+    text-align: center;
 }  
 
 
@@ -12,7 +13,8 @@ body{
     text-shadow: -0.3px 0.3px 0 rgb(223,244,255),
                   0.3px 0.3px 0 rgb(223,244,255),
                  0.3px -0.3px 0 rgb(223,244,255),
-                -0.3px -0.3px 0 rgb(223,244,255);
+                -0.3px -0.3px 0 rgb(223,244,255); 
+
 }
 
 
@@ -21,7 +23,8 @@ body{
     color: rgb(255, 236, 236); 
     /* border: 0.2px solid rgb(255,236,236);  */
     border: none;
-    /* box-shadow: 8px 8px 50px black; */
+    /* box-shadow: 8px 8px 50px black; */ 
+    display: inline-table;
 }  
 
 .backButton { 
@@ -29,7 +32,8 @@ body{
     color: rgb(50,50,50);
     /* border: 0.2px solid rgb(255,236,236);  */
     border: none;
-    box-shadow: 8px 8px 50px black; 
+    box-shadow: 8px 8px 50px black;  
+    display: inline-table;
 }
 
 
@@ -42,6 +46,8 @@ body{
                   0.2px 0.2px 0 rgb(223,244,255),
                  0.2px -0.2px 0 rgb(223,244,255),
                 -0.2px -0.2px 0 rgb(223,244,255); 
+    margin-left: auto; 
+    margin-right: auto;
 } 
 
 .editButton{ 
@@ -52,7 +58,7 @@ body{
                   0.2px 0.2px 0 rgb(223,244,255),
                  0.2px -0.2px 0 rgb(223,244,255),
                 -0.2px -0.2px 0 rgb(223,244,255); 
-
+    border: none;
 }  
 
 .editButton1{ 
@@ -82,7 +88,8 @@ body{
     text-shadow: -0.2px 0.2px 0 rgb(223,244,255),
                   0.2px 0.2px 0 rgb(223,244,255),
                  0.2px -0.2px 0 rgb(223,244,255),
-                -0.2px -0.2px 0 rgb(223,244,255); 
+                -0.2px -0.2px 0 rgb(223,244,255);  
+align-items: center;
  
 } 
 
@@ -118,7 +125,8 @@ body{
     background-color: rgb(20,20,20);
     /* border: 0.5px solid rgb(235,49,49); */
     color: rgb(235,49,49); 
-    border: none;
+    border: none; 
+    font-size: 25px;
 }
 
 #heading{ 
@@ -136,5 +144,9 @@ body{
 
 #rating { 
     display: inline-table;
+} 
+
+.commentsBlock{ 
+    background-image: linear-gradient(rgb(223,244,255), rgb(189,189,189)); 
 }
 

@@ -1,4 +1,4 @@
-const Workout = require("../model/Workout")    
+const Workout = require("../model/Workout1")    
 
 exports.exercise_show_get = (req,res) => { 
     // console.log(req.query.id);

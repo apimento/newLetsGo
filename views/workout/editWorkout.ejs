@@ -1,15 +1,15 @@
-<h1>EDIT ENTRY</h1> 
+<h1 class="title">EDIT ENTRY</h1> 
 
 <form method="post" action="/workout/allWorkouts/update/<%=workout.id%>?_method=PUT" > 
 
     <div>
        <label class="form-label" > Date</label> <br>
-       <input name="departs" type="date">
+       <input name="departs" type="date" value="<%=workout.date%>">
     </div> 
 
     <div>
         <label class="form-label" > Target Muscle Groups</label> <br>
-        <select type="checkbox" name="targetMuscleGroups1">
+        <select type="checkbox" name="targetMuscleGroups1" value="<%=workout.targetMuscleGroups1%>">
             <option value="Legs">Legs</option>
             <option value="Chest">Chest</option>
             <option value="Shoulders">Shoulders</option>
@@ -34,7 +34,7 @@
 
     <div>
         <label class="form-label" > Target Muscle Groups</label> <br>
-        <select type="checkbox" name="targetMuscleGroups2"> 
+        <select type="checkbox" name="targetMuscleGroups2" value="<%=workout.targetMuscleGroups2%>"> 
             <option value='  '>    </option>
             <option value="Legs">Legs</option>
             <option value="Chest">Chest</option>
@@ -60,7 +60,7 @@
 
     <div>
         <label class="form-label" > Target Muscle Groups</label> <br>
-        <select type="checkbox" name="targetMuscleGroups3"> 
+        <select type="checkbox" name="targetMuscleGroups3" value="<%=workout.targetMuscleGroups3%>"> 
             <option value='  '>    </option>
             <option value="Legs">Legs</option>
             <option value="Chest">Chest</option>
@@ -114,9 +114,10 @@ thinkging about thumb use and precision -->
         <input name="comments" type="text" value="<%=workout.comments%>">
     </div>   
 
+    <br>
    
-    <button type="submit" class="redButton">SAVE</button> 
+    <div class="row"><button type="submit" class="redButton">SAVE</button> 
 </form>
 
-    <button type="back" class="backButton">BACK</button> 
- 
+    <a href="/workout/allWorkouts"><button type="back" class="backButton">BACK</button></a>
+</div>

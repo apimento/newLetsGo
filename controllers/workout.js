@@ -1,4 +1,4 @@
-const Workout = require("../model/Workout") 
+const Workout = require("../model/Workout1") 
 
 exports.workout_index_get = (req,res) => { 
     Workout.find() 
