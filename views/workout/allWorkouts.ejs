@@ -9,7 +9,7 @@
 
     <% workouts.forEach(function(workout){  %>
         <tr class="divRow"> 
-                <td><a href="/workout/allWorkouts/<%=workout.id%>"><button class="divButton"> <%=workout.date %>
+                <td><a href="/workout/allWorkouts/<%=workout.id%>"><button class="divButton"> <%=(workout.date).toDateString() %>
                 <%=workout.targetMuscleGroups1 %></td>  
            </button> </a>
             <td ><a href="/workout/allWorkouts/edit/<%=workout.id %>"><button type="submit" class ="editButton">E</button></a></td>

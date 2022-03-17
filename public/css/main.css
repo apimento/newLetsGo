@@ -261,4 +261,8 @@ font-family: 'Secular One', sans-serif;
                 0.2px 0.2px 0 rgb(223,244,255),
                 0.2px -0.2px 0 rgb(223,244,255),
                 -0.2px -0.2px 0 rgb(223,244,255); 
+} 
+
+#credit{ 
+    color: rgb(187, 38, 38) ;
 }
