@@ -3,7 +3,8 @@ const Workout = require("../model/Workout")
 
 exports.workout_index_get = (req,res) => { 
     User.findById(req.user.id).populate("workouts")
-    .then(user => { 
+    .then(user => {  
+        console.log(user)
         res.render("workout/allWorkouts", {workouts : user.workouts})
     })
     .catch(err => { 
@@ -11,16 +12,16 @@ exports.workout_index_get = (req,res) => {
     })
 }; 
 
-exports.workout_create_post = async (req, res) => { 
+exports.workout_create_post = (req, res) => { 
     console.log(req.body); 
     let workout = new Workout(req.body);
 
     workout
     .save()  
-    .then(()=>{ 
-        // let user = await User.findById(req.user);
-        // user.workouts.push(workout.id);
-        // await user.save()
+    .then(async() => { 
+        let user = await User.findById(req.user);
+        user.workouts.push(workout.id);
+        await user.save()
         res.redirect('/workout/allWorkouts');
     })
     .catch((err)=> { 
