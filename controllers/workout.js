@@ -1,22 +1,26 @@
-const Workout = require("../model/Workout1") 
+const User = require("../model/User");
+const Workout = require("../model/Workout") 
 
 exports.workout_index_get = (req,res) => { 
-    Workout.find() 
-    .then(workouts => { 
-        res.render("workout/allWorkouts", {workouts : workouts})
+    User.findById(req.user.id).populate("workouts")
+    .then(user => { 
+        res.render("workout/allWorkouts", {workouts : user.workouts})
     })
     .catch(err => { 
         console.log(err);
     })
 }; 
 
-exports.workout_create_post = (req, res) => { 
+exports.workout_create_post = async (req, res) => { 
     console.log(req.body); 
     let workout = new Workout(req.body);
 
     workout
     .save()  
     .then(()=>{ 
+        // let user = await User.findById(req.user);
+        // user.workouts.push(workout.id);
+        // await user.save()
         res.redirect('/workout/allWorkouts');
     })
     .catch((err)=> { 

@@ -20,8 +20,12 @@ const userSchema = mongoose.Schema({
         required: true, 
         minlength: [6, "Must be at least 6 characters long"]
 
-    } 
+    }, 
 
+    workouts:[{ 
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Workout"
+    }]
 }
 , 
     {
