@@ -17,7 +17,7 @@ font-family: 'Secular One', sans-serif;
                   0.3px 0.3px 0 rgb(223,244,255),
                  0.3px -0.3px 0 rgb(223,244,255),
                 -0.3px -0.3px 0 rgb(223,244,255); 
-
+    text-align: center;
 }
 
 
@@ -42,8 +42,6 @@ font-family: 'Secular One', sans-serif;
     width: 5em; 
     margin-right: 2em;
 }
-
-
 
 .divButton{ 
     background-image: linear-gradient(rgb(223,244,255), rgb(189,189,189) ); 
@@ -106,18 +104,108 @@ font-family: 'Secular One', sans-serif;
                  0.2px -0.2px 0 rgb(223,244,255),
                 -0.2px -0.2px 0 rgb(223,244,255); 
     border: 2.6px solid rgb(223,244,255);  
-    background-color: rgb(50,50,50);
+    background-color: rgb(50,50,50, 0); 
+    transform: translate(0em, -2em);
+}
+
+#logButton{ 
+    padding-left:2em; 
+    padding-right:2em;
 }
 
 .weight{ 
-    border: 3px solid rgb(223,244,255);  
-    background-color: rgb(50,50,50);
+    border: 2px solid rgb(182, 205, 218);  
+    background-image: radial-gradient(circle, rgb(40, 40, 46), rgb(80,80,80) );
     border-radius: 50%;  
     height: 75px; 
     width: 30px; 
     display: inline-flex;
-    
+} 
+
+#addEntry{ 
+    margin-right: 2em; 
+    display: inline-table;
 }
+
+#log{ 
+    margin-left: 2em;
+    display: inline-table;
+} 
+
+#iconHead{ 
+    border-radius: 50%; 
+    background-image: linear-gradient(rgb(20,20,20), rgb(40, 40, 46)); 
+    border: 1px solid rgb(235,49,49);
+    height: 6em; 
+    width:6em; 
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-10em);
+
+}
+
+ #forearm1 {
+    border: 1px solid rgb(235,49,49); 
+    background-image: linear-gradient(rgb(20,20,20), rgb(35,35,40)); 
+    border-radius: 35%;
+    height: 9em; 
+    width: 2em; 
+    transform: skew(-14deg, -10deg) translateY(-1.8em) translateX(-1em);
+    margin-left: 1em;  
+    display: inline-table;
+} 
+
+#forearm2 {
+    border: 1px solid rgb(235,49,49);  
+    background-image: linear-gradient(rgb(20,20,20), rgb(35,35,40)); 
+    border-radius: 35%;
+    height: 9em; 
+    width: 2em; 
+    transform: skew(10deg, 10deg) translateY(-1.7em);
+    margin-left: 15em;   
+    display: inline-table;
+}
+
+#upperArm1 {
+    border: 1px solid rgb(235,49,49);  
+    background-image: linear-gradient(rgb(20,20,20), rgb(40, 40, 46)); 
+    border-radius: 35%;
+    height: 9em; 
+    width: 4.5em; 
+    transform: skew(20deg, 20deg) translateY(-3em) translateX(-1em) ; 
+
+    display: inline-table;
+}
+
+#upperArm2 {
+    border: 1px solid rgb(235,49,49);  
+    background-image: linear-gradient(rgb(20,20,20), rgb(40, 40, 46)); 
+    border-radius: 35%;
+    height: 9em; 
+    width: 4.5em;  
+    margin-left: 6em;
+    transform: skew(-20deg, -20deg) translateY(-3em) translateX(1em) ;
+    display: inline-table;
+}  
+
+#sideBody1{ 
+    border: 0.5px solid rgb(158, 34, 34); 
+    height: 11em; 
+    width:0em; 
+    display: inline-table;  
+    transform: skew(10deg, 10deg) translateY(-8em) 
+
+} 
+
+#sideBody2{ 
+    border: 0.5px solid rgb(158, 34, 34);   
+    height: 11em; 
+    width:0em;
+    display: inline-table; 
+    margin-left: 8em; 
+    transform: skew(-10deg, -10deg) translateY(-8em) 
+}
+
 
 .collapsed{ 
     display: none;
@@ -158,4 +246,4 @@ font-family: 'Secular One', sans-serif;
 
 .inline{ 
     display: inline-table;
-}
+} 

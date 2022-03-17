@@ -1,8 +1,15 @@
 <h1 class="title"> Workout Log</h1>  
 <table class="divRow"> 
+
+    <% workouts.sort(function (a,b) { %>
+       <% var dateA = new Date(a.date_prop); %>
+       <% var dateB = new Date(b.date_prop); %> 
+       <% return dateA < dateB ? 1:-1; %>
+    <% }) %>
+
     <% workouts.forEach(function(workout){  %>
         <tr class="divRow"> 
-                <td><a href="/workout/allWorkouts/<%=workout.id%>"><button class="divButton"><%=workout.date%> 
+                <td><a href="/workout/allWorkouts/<%=workout.id%>"><button class="divButton"> <%=workout.date %>
                 <%=workout.targetMuscleGroups1 %></td>  
            </button> </a>
             <td ><a href="/workout/allWorkouts/edit/<%=workout.id %>"><button type="submit" class ="editButton">E</button></a></td>

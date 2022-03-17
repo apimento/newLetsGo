@@ -17,7 +17,7 @@ const exerciseSchema = new Schema({
   });
 
 const workoutSchema = new Schema({
-    date: Date, 
+    date: {type: Date, default: new Date(new Date().setFullYear(new Date().getFullYear()))},
     targetMuscleGroups1: {type: String, enum: ['Legs','Chest', 'Shoulders', 'Back', 'Arms', 'Core', 'Cardio', '- - -', 'Calves', 'Quads', 'Hamstrings', 'Glutes', 'Obliques', "Abs", 'Biceps', 'Triceps', 'Traps', 'Delts', 'Lats']},
     targetMuscleGroups2: {type: String, enum: ['  ','Legs','Chest', 'Shoulders', 'Back', 'Arms', 'Core', 'Cardio', '- - -', 'Calves', 'Quads', 'Hamstrings', 'Glutes', 'Obliques', "Abs", 'Biceps', 'Triceps', 'Traps', 'Delts', 'Lats']},
     targetMuscleGroups3: {type: String, enum: ['  ','Legs','Chest', 'Shoulders', 'Back', 'Arms', 'Core', 'Cardio', '- - -', 'Calves', 'Quads', 'Hamstrings', 'Glutes', 'Obliques', "Abs", 'Biceps', 'Triceps', 'Traps', 'Delts', 'Lats']},

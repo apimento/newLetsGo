@@ -4,7 +4,7 @@
 
     <div>
        <label class="form-label" > Date</label> <br>
-       <input name="departs" type="date" value="<%=workout.date%>">
+       <input name="departs" type="string" value="<%=(workout.date).toDateString() %>">
     </div> 
 
     <div>
@@ -115,10 +115,10 @@ thinkging about thumb use and precision -->
     </div>   
 
     <br> 
-    <div clas="row">
+    
     <a href="/workout/allWorkouts"><button type="back" class="backButton">BACK</button></a>
-    <div class="row"><button type="submit" class="redButton">SAVE</button>  
-    </div>
+    <button type="submit" class="redButton">SAVE</button>  
+    
 </form>
 
     
