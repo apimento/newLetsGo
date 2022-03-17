@@ -35,6 +35,16 @@ font-family: 'Secular One', sans-serif;
     width: 8em; 
 }  
 
+.backButton1 { 
+    background-image: linear-gradient(rgb(241, 125, 125), rgb(235,49,49)  );    
+    color: rgb(50,50,50);
+    border: 0.2px solid rgb(255,236,236); 
+    /* border: none; */
+    box-shadow: 8px 8px 50px black;  
+    display: inline-table; 
+    width: 5em; 
+} 
+
 .backButton { 
     background-image: linear-gradient(rgb(241, 125, 125), rgb(235,49,49)  );    
     color: rgb(50,50,50);
