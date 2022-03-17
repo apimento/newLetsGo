@@ -3,7 +3,8 @@ const Workout = require("../model/Workout")
 
 exports.workout_index_get = (req,res) => { 
     User.findById(req.user.id).populate("workouts")
-    .then(user => {  
+    .then(user => {   
+     user.workouts= user.workouts.sort((a, b) => b.date - a.date)
         console.log(user)
         res.render("workout/allWorkouts", {workouts : user.workouts})
     })
