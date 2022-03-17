@@ -5,20 +5,22 @@ body{
     background-repeat: "no-repeat";
     color: rgb(235,49,49);    
     text-align: center;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Nunito', sans-serif;
+font-family: 'Outfit', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Secular One', sans-serif;
-}  
+}
 
 
 .title { 
-    color: rgb(235,49,49); 
+    /* color: rgb(235, 77, 49);  */
+    background-image: linear-gradient(rgb(235, 77, 49), rgb(187, 38, 38)); 
     text-shadow: -0.3px 0.3px 0 rgb(223,244,255),
                   0.3px 0.3px 0 rgb(223,244,255),
                  0.3px -0.3px 0 rgb(223,244,255),
                 -0.3px -0.3px 0 rgb(223,244,255); 
     text-align: center; 
-    font-size: 44px;
+    font-size: 44px; 
 }
 
 
@@ -253,3 +255,10 @@ font-family: 'Secular One', sans-serif;
 .inline{ 
     display: inline-table;
 } 
+
+.emphasize{ 
+    text-shadow: -0.2px 0.2px 0 rgb(223,244,255),
+                0.2px 0.2px 0 rgb(223,244,255),
+                0.2px -0.2px 0 rgb(223,244,255),
+                -0.2px -0.2px 0 rgb(223,244,255); 
+}
