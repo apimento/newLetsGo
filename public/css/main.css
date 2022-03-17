@@ -17,7 +17,8 @@ font-family: 'Secular One', sans-serif;
                   0.3px 0.3px 0 rgb(223,244,255),
                  0.3px -0.3px 0 rgb(223,244,255),
                 -0.3px -0.3px 0 rgb(223,244,255); 
-    text-align: center;
+    text-align: center; 
+    font-size: 44px;
 }
 
 
@@ -103,9 +104,10 @@ font-family: 'Secular One', sans-serif;
                   0.2px 0.2px 0 rgb(223,244,255),
                  0.2px -0.2px 0 rgb(223,244,255),
                 -0.2px -0.2px 0 rgb(223,244,255); 
-    border: 2.6px solid rgb(223,244,255);  
-    background-color: rgb(50,50,50, 0); 
-    transform: translate(0em, -2em);
+    border: 2px solid rgb(182, 205, 218);  
+    background-image: radial-gradient(circle, rgb(40, 40, 46), rgb(80,80,80) );
+    transform: translate(0em, -2em); 
+    font-size: 20px;
 }
 
 #logButton{ 
@@ -117,19 +119,23 @@ font-family: 'Secular One', sans-serif;
     border: 2px solid rgb(182, 205, 218);  
     background-image: radial-gradient(circle, rgb(40, 40, 46), rgb(80,80,80) );
     border-radius: 50%;  
-    height: 75px; 
-    width: 30px; 
-    display: inline-flex;
+    height: 6em; 
+    width: 2.2em; 
+    display: inline-flex; 
+    /* transform: translateY(1em); */
 } 
 
 #addEntry{ 
     margin-right: 2em; 
-    display: inline-table;
+    display: inline-table;  
+    transform: translateY(0.8em);
+    
 }
 
 #log{ 
     margin-left: 2em;
-    display: inline-table;
+    display: inline-table;  
+    transform: translateY(0.8em);
 } 
 
 #iconHead{ 
@@ -150,7 +156,7 @@ font-family: 'Secular One', sans-serif;
     border-radius: 35%;
     height: 9em; 
     width: 2em; 
-    transform: skew(-14deg, -10deg) translateY(-1.8em) translateX(-1em);
+    transform: skew(-6deg, -6deg) translateY(-1.8em) translateX(-1em);
     margin-left: 1em;  
     display: inline-table;
 } 
@@ -161,7 +167,7 @@ font-family: 'Secular One', sans-serif;
     border-radius: 35%;
     height: 9em; 
     width: 2em; 
-    transform: skew(10deg, 10deg) translateY(-1.7em);
+    transform: skew(6deg, 6deg) translateY(-1.7em);
     margin-left: 15em;   
     display: inline-table;
 }
