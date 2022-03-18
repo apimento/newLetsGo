@@ -8,7 +8,7 @@
 <table class="divRow">
     <% workout.exercises.forEach(function(exercise) { %> 
     <tr >
-        <td> <%= exercise.name%> (<%= exercise.targetMuscleGroups1%>)
+        <td> <%= exercise.name%> (<%= exercise.targetMuscleGroups1%> <%= exercise.targetMuscleGroups2%> <%= exercise.targetMuscleGroups3%>)
         <td class ="editButton1"><a href="/day/allExercises/edit/<%=workout.id %>/<%=exercise.id%>"><button type="submit">E</button></a></td>
         <td><form method="POST" action="/day/allExercises/delete/<%=workout.id%>/<%=exercise.id%>?_method=DELETE"> <button type="submit" class ="deleteButton1"> X </button>
         </form> </td>
