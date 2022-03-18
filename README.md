@@ -19,7 +19,7 @@ Through OAuth Authentication, the User's information is stored and can only be a
 as well as details about each specific exercise within it, on their personal account.  
 
 ## Technologies Used ## 
-Node.js Express MongoDB Mongooese Javascript HTML CSS 
+Node.js Express MongoDB Mongooese Javascript HTML CSS Heroku
 
 ## Getting Started ##
 ### Wireframes ### 
