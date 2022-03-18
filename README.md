@@ -54,7 +54,7 @@ I want to input log-out functionality.
 I want the User to be able to scroll through workout entries through the body of the screen. 
 I want to seperate items from each other in the logs. 
 I want the User's data to be sorted into folders based on entry time (options: Year, Month, Week).  
-I want to create and apply a pencil icon on the Edit button to replace the P. 
+I want to create and apply a pencil icon on the Edit button to replace the "E". 
 
 
 
