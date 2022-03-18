@@ -13,7 +13,6 @@ font-family: 'Secular One', sans-serif;
 
 
 .title { 
-    /* color: rgb(235, 77, 49);  */
     background-image: linear-gradient(rgb(235, 77, 49), rgb(187, 38, 38)); 
     text-shadow: -0.3px 0.3px 0 rgb(223,244,255),
                   0.3px 0.3px 0 rgb(223,244,255),
@@ -28,8 +27,6 @@ font-family: 'Secular One', sans-serif;
     background-image: linear-gradient(rgb(255, 92, 92), rgb(235,49,49)  );    
     color: rgb(255, 236, 236); 
     border: 0.2px solid rgb(255,236,236); 
-    /* border: none; */
-    /* box-shadow: 8px 8px 50px black; */ 
     display: inline-table; 
     height:4em; 
     width: 8em; 
@@ -39,7 +36,6 @@ font-family: 'Secular One', sans-serif;
     background-image: linear-gradient(rgb(241, 125, 125), rgb(235,49,49)  );    
     color: rgb(50,50,50);
     border: 0.2px solid rgb(255,236,236); 
-    /* border: none; */
     box-shadow: 8px 8px 50px black;  
     display: inline-table; 
     width: 5em; 
@@ -49,7 +45,6 @@ font-family: 'Secular One', sans-serif;
     background-image: linear-gradient(rgb(241, 125, 125), rgb(235,49,49)  );    
     color: rgb(50,50,50);
     border: 0.2px solid rgb(255,236,236); 
-    /* border: none; */
     box-shadow: 8px 8px 50px black;  
     display: inline-table; 
     width: 5em; 
@@ -69,7 +64,6 @@ font-family: 'Secular One', sans-serif;
 .editButton{ 
     color: rgb(50,50,50);  
     background-image: linear-gradient(rgb(223,244,255), rgb(189,189,189) ); 
-    /* border: 0.3px solid rgb(255, 236, 236); */
     text-shadow: -0.2px 0.2px 0 rgb(223,244,255),
                   0.2px 0.2px 0 rgb(223,244,255),
                  0.2px -0.2px 0 rgb(223,244,255),
@@ -85,7 +79,6 @@ font-family: 'Secular One', sans-serif;
 .deleteButton{  
     color: rgb(50,50,50);  
     background-image: linear-gradient(rgb(223,244,255), rgb(189,189,189) ); 
-    /* border: 0.3px solid rgb(255, 236, 236); */
     text-shadow: -0.2px 0.2px 0 rgb(223,244,255),
                   0.2px 0.2px 0 rgb(223,244,255),
                  0.2px -0.2px 0 rgb(223,244,255),
@@ -99,7 +92,6 @@ font-family: 'Secular One', sans-serif;
 
 .divRow{ 
     background-image: linear-gradient(rgb(223,244,255), rgb(189,189,189) ); 
-    /* border: 0.2px solid rgb(255, 236, 236);  */
     border-bottom: rgb(189,189,189);
     color: rgb(235,49,49); 
     text-shadow: -0.2px 0.2px 0 rgb(223,244,255),
@@ -134,14 +126,12 @@ font-family: 'Secular One', sans-serif;
     height: 6em; 
     width: 2.2em; 
     display: inline-flex; 
-    /* transform: translateY(1em); */
 } 
 
 #addEntry{ 
     margin-right: 2em; 
     display: inline-table;  
     transform: translateY(0.8em);
-    
 }
 
 #log{ 
@@ -159,7 +149,6 @@ font-family: 'Secular One', sans-serif;
     margin-left: auto;
     margin-right: auto;
     transform: translateY(-10em);
-
 }
 
  #forearm1 {
@@ -191,7 +180,6 @@ font-family: 'Secular One', sans-serif;
     height: 9em; 
     width: 4.5em; 
     transform: skew(20deg, 20deg) translateY(-3em) translateX(-1em) ; 
-
     display: inline-table;
 }
 
@@ -212,7 +200,6 @@ font-family: 'Secular One', sans-serif;
     width:0em; 
     display: inline-table;  
     transform: skew(10deg, 10deg) translateY(-8em) 
-
 } 
 
 #sideBody2{ 

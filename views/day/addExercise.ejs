@@ -1,13 +1,11 @@
 <form  method="post" action="/day/addExercise/<%=id%>" > 
 
-
    <h1 class="title">ADD EXERCISE</h1>  
 
        <label class="form-label">Name</label> <br>
        <input name="name" type="text" > 
        <br>
        <br>
-
 
         <label class="form-label" > Target Muscle Groups</label> <br>
         <select type="text" name="targetMuscleGroups1" > 
@@ -33,7 +31,6 @@
         </select>  
         <br> 
 
-
         <label class="form-label" > Target Muscle Groups</label> <br>
         <select type="text" name="targetMuscleGroups2" >  
             <option value='  '>  </option>
@@ -58,7 +55,6 @@
             <option value="Lats">Lats</option> 
         </select>  
         <br>
-
 
         <label class="form-label" > Target Muscle Groups</label> <br>
         <select type="text" name="targetMuscleGroups3" >  
@@ -86,8 +82,6 @@
         <br>
         <br>
 
-
-    
 <div class="inline"> 
         <label class="form-label"> Sets</label> <br>
         <input name="sets" type="Number" min="1" max="999"> <br> 
@@ -99,8 +93,6 @@
 
 <br>
 <br>
-
-
         <label> Weight</label> <br>
         <input name="weight" type="number" min="1" max="999"> 
         <select type="text" name="weightUom">
@@ -123,12 +115,9 @@
     <br> 
     <br>
 
-    <!-- <input type="text" value="<%=id %>" name="id"> --> 
-
-<div class="row">
-    <div class="backButton"><a href="/day/allExercises?id=<%=id%>">BACK</a></div>
-    <button type="submit" class="redButton">ADD TO WORKOUT</button>  
-</div>
-
+    <div class="row">
+        <div class="backButton"><a href="/day/allExercises?id=<%=id%>">BACK</a></div>
+        <button type="submit" class="redButton">ADD TO WORKOUT</button>  
+    </div>
 
 </form>  

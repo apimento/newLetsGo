@@ -3,10 +3,8 @@ const router = express.Router();
 const { append } = require("express/lib/response");
 const isLoggedIn = require("../help/isLoggedIn");
 
-//after npm i method-override
 var methodOverride = require("method-override")
 
-//must be below initialization of router
 router.use(methodOverride('_method'))
 
 router.use(express.urlencoded({extended: true}));  

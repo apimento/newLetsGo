@@ -29,7 +29,6 @@ exports.workout_create_post = (req, res) => {
         console.log(err); 
         res.send("ERROR!")
     }) 
-
 };  
 
 exports.workout_create_get = (req, res) => { 

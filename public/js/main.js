@@ -1,5 +1,3 @@
-
-
 $('.alert').hide(3000); 
 
 const rating = document.getElementById("rating"); 

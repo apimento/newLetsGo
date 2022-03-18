@@ -1,18 +1,13 @@
-//after npm i passport passport-local
 const passport = require("passport"); 
 
 const LocalStrategy = require('passport-local').Strategy;  
 
 const User = require("../model/User"); 
 
-// serializedUser  - 
-//store user id / data to the session
 passport.serializeUser(function(user, done){ 
     done(null,user.id);
 })
 
-//DeserializedUser 
-//reading info from db according to user id (session)
 passport.deserializeUser(function(id, done){ 
     User.findById(id, function(err,user){ 
         done(err,user);
