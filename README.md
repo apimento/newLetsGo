@@ -1,7 +1,7 @@
 #project2LetsGo
 # LET'S GO # 
 
-## [CLICK TO PLAY] ## 
+## [CLICK TO USE THE APP](https://newletsgo.herokuapp.com/auth/signin) ## 
 
 ## The App ##
 LET'S GO is a mobile information storage app designed to help people log their workouts. Creating, reading, updating or deleting data during an activity as 
@@ -34,7 +34,7 @@ Before beginning to build the app, I made a series of wireframes and noted the r
 I didn't deviate too far from the wireframes, but I wanted to play with contrast and having UI elements feel like they are floating on the page. 
 
 
-<img width="150" alt="Screen Shot 2022-03-17 at 11 10 42 PM" src="https://user-images.githubusercontent.com/98665437/158936751-52ce0f3c-a76e-4835-b20a-42584ad3c282.png"><img width="150" alt="Screen Shot 2022-03-17 at 11 07 58 PM" src="https://user-images.githubusercontent.com/98665437/158936775-644bf822-a55a-4628-9388-71d33c77c4bb.png"><img width="150" alt="Screen Shot 2022-03-17 at 11 12 11 PM" src="https://user-images.githubusercontent.com/98665437/158937087-a659a891-6995-4feb-aabc-782f34c6fc58.png"><img width="150" alt="Screen Shot 2022-03-17 at 11 09 22 PM" src="https://user-images.githubusercontent.com/98665437/159018241-9cda2865-e49e-4b53-9bd7-ccbe0cb70696.png">
+<img width="150" alt="Screen Shot 2022-03-17 at 11 09 22 PM" src="https://user-images.githubusercontent.com/98665437/159018241-9cda2865-e49e-4b53-9bd7-ccbe0cb70696.png"><img width="150" alt="Screen Shot 2022-03-17 at 11 10 42 PM" src="https://user-images.githubusercontent.com/98665437/158936751-52ce0f3c-a76e-4835-b20a-42584ad3c282.png"><img width="150" alt="Screen Shot 2022-03-17 at 11 07 58 PM" src="https://user-images.githubusercontent.com/98665437/158936775-644bf822-a55a-4628-9388-71d33c77c4bb.png"><img width="150" alt="Screen Shot 2022-03-17 at 11 12 11 PM" src="https://user-images.githubusercontent.com/98665437/158937087-a659a891-6995-4feb-aabc-782f34c6fc58.png">
 
 
 I particularly enjoyed designing the forms. I wanted to make sure the information the user submits is comprehensive and specific, so the log is very 
