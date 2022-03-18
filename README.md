@@ -26,7 +26,11 @@ Node.js Express MongoDB Mongooese Javascript HTML CSS
 Before beginning to build the app, I made a series of wireframes and noted the routes and controllers connecting then together. 
 
 
-<img width="150" alt="Screen Shot 2022-03-18 at 10 13 38 AM" src="https://user-images.githubusercontent.com/98665437/159019190-dc6d7a3e-8dd2-486b-8a13-822edb30eb91.png"><img width="150" alt="Screen Shot 2022-03-18 at 10 11 42 AM" src="https://user-images.githubusercontent.com/98665437/159018747-7baf2f3a-5e9b-4c40-a720-56b97c59910c.png"><img width="150" alt="Screen Shot 2022-03-18 at 10 12 45 AM" src="https://user-images.githubusercontent.com/98665437/159019445-be900f31-ae93-437f-91ae-bab4881f10a7.png"><img width="150" alt="Screen Shot 2022-03-18 at 10 14 26 AM" src="https://user-images.githubusercontent.com/98665437/159019512-743b1a38-c07b-4fde-9050-8ca417c50976.png">
+<img width="150" alt="Screen Shot 2022-03-18 at 10 13 38 AM" src="https://user-images.githubusercontent.com/98665437/159019190-dc6d7a3e-8dd2-486b-8a13-822edb30eb91.png"><img width="150" alt="Screen Shot 2022-03-18 at 10 11 42 AM" src="https://user-images.githubusercontent.com/98665437/159018747-7baf2f3a-5e9b-4c40-a720-56b97c59910c.png"><img width="150" alt="Screen Shot 2022-03-18 at 10 12 45 AM" src="https://user-images.githubusercontent.com/98665437/159019445-be900f31-ae93-437f-91ae-bab4881f10a7.png"><img width="150" alt="Screen Shot 2022-03-18 at 10 14 26 AM" src="https://user-images.githubusercontent.com/98665437/159019512-743b1a38-c07b-4fde-9050-8ca417c50976.png"> 
+
+
+
+<img width="200" alt="Screen Shot 2022-03-18 at 10 30 06 AM" src="https://user-images.githubusercontent.com/98665437/159022049-d2e1398b-9f07-4874-bc83-74332126c89a.png">
 
 
 
