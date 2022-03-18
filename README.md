@@ -4,13 +4,10 @@
 ## [CLICK TO USE THE APP](https://newletsgo.herokuapp.com/auth/signin) ## 
 
 ## The App ##
-LET'S GO is a mobile information storage app designed to help people log their workouts. Creating, reading, updating or deleting data during an activity as 
-involved as working out, should be simple. The interface should display the information in such a way that the user should enjoy looking at the information
-and communicate it to the user clearly. Users should be able to navigate through the information architecture as gracefully as possible. It should serve as
-a log without distracting from the workout. Simplicity is key. 
+LET'S GO is a mobile information storage app app for people who want to use information to improve their fitness.
 
-
-I made an app for people who want to use information to improve their fitness.
+Creating, reading, updating or deleting data during an activity as 
+involved as working out, should be simple. The interface should display the information in such a way that the user should enjoy looking at it while communicating it clearly to the User. Users should be able to navigate through the information architecture as gracefully as possible. It should serve as a log without distracting from the workout. 
 
 
 <img width="250" alt="Screen Shot 2022-03-17 at 10 40 16 PM" src="https://user-images.githubusercontent.com/98665437/158929031-e03b5f43-1004-46bd-8fb7-56bc234cc3f9.png">
